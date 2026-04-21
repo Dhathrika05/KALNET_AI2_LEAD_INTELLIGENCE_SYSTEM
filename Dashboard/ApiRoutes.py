@@ -54,7 +54,7 @@ def get_leads(data:Data):
     return {"message":ans.to_dict(orient="records")}
     
 
-app.get("/lead/{id}")
+@app.get("/leads/{id}")
 def get_lead(id:int):
     ans=pd_data[pd_data['id'].astype(int)==id]
     if ans.empty:
