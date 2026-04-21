@@ -63,29 +63,3 @@ def get_lead(id:int):
         return {"message":ans.to_dict(orient="records")}    
 
 
-'''
- if we only use get method 
-
-
-@app.get("/leads")
-def get_leads(
-    search: Optional[str] = None, 
-    state: Optional[str] = None, 
-    school_type: Optional[str] = None, 
-    tier: Optional[str] = None, 
-    has_email: Optional[bool] = None):
-
-    ans=pd_data
-    if search:
-        ans=ans[ans["Name"]==data.search] #ans=data[data["Name"].str.contains(data.search,case=False)]
-    if state:
-        ans=ans[ans["state"]==data.state]
-    if school_type:
-        ans=ans[ans["type"]==data.type]
-    if tier:
-        ans=ans[ans["tier"]==data.tier]
-    if has_email:
-        ans=ans[ans["has_email"]==data.has_email]
-    
-
-    return {"message":ans.to_dict(orient="records")}'''
