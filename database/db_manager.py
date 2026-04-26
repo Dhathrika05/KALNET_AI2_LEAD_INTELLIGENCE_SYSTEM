@@ -1,6 +1,7 @@
 # Inside database/db_manager.py
 from .config import Config 
 import mysql.connector
+from sqlalchemy import create_engine
 
 def get_db_connection():
     """
@@ -24,3 +25,15 @@ def get_db_connection():
         # As Lead, you need specific error reporting to debug team issues
         print(f"CRITICAL: Database connection failed. Error: {e}")
         return None
+# New function for pandas
+def get_engine():
+    try:
+        engine = create_engine(
+            f"mysql+pymysql://{Config.DB_USER}:{Config.DB_PASSWORD}@{Config.DB_HOST}/{Config.DB_NAME}"
+        )
+        return engine
+    except Exception as e:
+        print(f"Engine creation failed: {e}")
+        return None
+    
+    
