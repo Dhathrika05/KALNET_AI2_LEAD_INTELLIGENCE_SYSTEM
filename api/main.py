@@ -12,7 +12,7 @@ pd_data=pd.DataFrame(
         "Name":["school1","school2","school3","school4","school5"],
         "state":["Telangana","andhrapradesh","maharastra","Telangana","kerla"],
         "school_type":["Governament","Private","Private","Governament","Private"],
-        "tier":["Tier1","Tier2","Tier3","Tier4","Tier5"],
+        "tier":["Tier 1","Tier 2","Tier 3","Tier 4","Tier 5"],
         "has_email":[True,False,True,False,True]
 
     }
@@ -35,20 +35,25 @@ class Data(BaseModel):
     has_email:Optional[bool]=None
 
 
-@app.post("/leads")
-def get_leads(data:Data):
+@app.get("/leads")
+def get_leads(id:Optional[int]=None
+    ,search:Optional[str]=None
+    ,state:Optional[str]=None
+    ,school_type:Optional[str]=None
+    ,tier:Optional[str]=None
+    ,has_email:Optional[bool]=None):
 
     ans=pd_data
-    if data.search:
-        ans=ans[ans["Name"]==data.search] #ans=data[data["Name"].str.contains(data.search,case=False)]
-    if data.state:
-        ans=ans[ans["state"]==data.state]
-    if data.school_type:
-        ans=ans[ans["school_type"]==data.type]
-    if data.tier:
-        ans=ans[ans["tier"]==data.tier]
-    if data.has_email:
-        ans=ans[ans["has_email"]==data.has_email]
+    if search:
+        ans=ans[ans["Name"]==search] #ans=data[data["Name"].str.contains(data.search,case=False)]
+    if state:
+        ans=ans[ans["state"]==state]
+    if school_type:
+        ans=ans[ans["school_type"]==school_type]
+    if tier:
+        ans=ans[ans["tier"]==tier]
+    if has_email is not None:
+        ans=ans[ans["has_email"]==has_email]
     
 
     return {"message":ans.to_dict(orient="records")}
