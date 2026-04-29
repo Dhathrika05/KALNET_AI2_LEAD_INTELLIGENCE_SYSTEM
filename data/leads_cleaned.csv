@@ -1,0 +1,51 @@
+name,state,district,type,student_count,website,full_name,company_size_category
+St. Ann's College for Women,Telangana,Hyderabad,Private,1200,https://stanns.edu.in,St. Ann's College for Women,Medium
+Osmania University College of Science,Telangana,Hyderabad,Govt,5000,https://www.osmania.ac.in,Osmania University College of Science,Large
+Nizam College,Telangana,Hyderabad,Govt,3200,https://nizamcollege.ac.in,Nizam College,Medium
+SR & BGNR Govt. Degree College,Telangana,Karimnagar,Govt,1800,,SR & BGNR Govt. Degree College,Medium
+Kakatiya University College,Telangana,Warangal,Govt,4500,https://www.kakatiya.ac.in,Kakatiya University College,Medium
+Aurora's Degree College,Telangana,Hyderabad,Private,900,https://www.auroradegree.ac.in,Aurora's Degree College,Small
+St. Francis College for Women,Telangana,Hyderabad,Aided,1400,https://www.stfranciscollege.ac.in,St. Francis College for Women,Medium
+Govt. Degree College for Women,Telangana,Nizamabad,Govt,2100,,Govt. Degree College for Women,Medium
+Vasavi College of Engineering,Telangana,Hyderabad,Aided,3600,https://www.vasavicollege.ac.in,Vasavi College of Engineering,Medium
+JNTU Hyderabad,Telangana,Hyderabad,Govt,8000,https://www.jntuh.ac.in,JNTU Hyderabad,Large
+Muffakham Jah College of Engg,Telangana,Hyderabad,Aided,2800,https://www.mjcollege.ac.in,Muffakham Jah College of Engg,Medium
+Govt. City College,Telangana,Hyderabad,Govt,2400,,Govt. City College,Medium
+St. Xavier's College,Maharashtra,Mumbai,Aided,3500,https://www.xaviers.edu,St. Xavier's College,Medium
+Fergusson College,Maharashtra,Pune,Aided,4200,https://www.fergusson.edu,Fergusson College,Medium
+Symbiosis College of Arts and Commerce,Maharashtra,Pune,Private,2800,https://www.symbiosiscollege.edu.in,Symbiosis College of Arts and Commerce,Medium
+Elphinstone College,Maharashtra,Mumbai,Govt,3100,https://www.elphinstone.ac.in,Elphinstone College,Medium
+Ruparel College,Maharashtra,Mumbai,Aided,2900,https://www.ruparelcollege.org,Ruparel College,Medium
+K.J. Somaiya College of Science,Maharashtra,Mumbai,Private,3400,https://kjssc.somaiya.edu,K.J. Somaiya College of Science,Medium
+COEP Technological University,Maharashtra,Pune,Govt,5600,https://www.coep.org.in,COEP Technological University,Large
+Wadia College,Maharashtra,Pune,Aided,1600,https://www.wadiacollege.edu.in,Wadia College,Medium
+Govt. Vidharbha Institute of Science,Maharashtra,Amravati,Govt,2200,,Govt. Vidharbha Institute of Science,Medium
+ICT Mumbai (UDCT),Maharashtra,Mumbai,Govt,1800,https://www.ictmumbai.edu.in,ICT Mumbai (UDCT),Medium
+Pune University Dept. of Chemistry,Maharashtra,Pune,Govt,1200,https://www.unipune.ac.in,Pune University Dept. of Chemistry,Medium
+VPM's B N Bandodkar College,Maharashtra,Thane,Aided,2100,https://www.bnbandodkar.edu.in,VPM's B N Bandodkar College,Medium
+Christ University,Karnataka,Bengaluru,Private,6000,https://www.christuniversity.in,Christ University,Large
+Bangalore University College,Karnataka,Bengaluru,Govt,3800,https://www.bangaloreuniversity.ac.in,Bangalore University College,Medium
+Mount Carmel College,Karnataka,Bengaluru,Aided,3200,https://www.mountcarmelcollegeblr.ac.in,Mount Carmel College,Medium
+St. Joseph's College of Commerce,Karnataka,Bengaluru,Aided,2700,https://www.sjcc.edu.in,St. Joseph's College of Commerce,Medium
+RV College of Engineering,Karnataka,Bengaluru,Private,5500,https://www.rvce.edu.in,RV College of Engineering,Large
+Mysore University Constituent College,Karnataka,Mysuru,Govt,4100,https://uni-mysore.ac.in,Mysore University Constituent College,Medium
+Manipal College of Arts,Karnataka,Udupi,Private,2500,https://www.manipal.edu,Manipal College of Arts,Medium
+Govt. First Grade College Gulbarga,Karnataka,Kalaburagi,Govt,1900,,Govt. First Grade College Gulbarga,Medium
+BMS College of Engineering,Karnataka,Bengaluru,Aided,4700,https://www.bmsce.ac.in,BMS College of Engineering,Medium
+Govt. Science College Bengaluru,Karnataka,Bengaluru,Govt,2300,,Govt. Science College Bengaluru,Medium
+Jyoti Nivas College,Karnataka,Bengaluru,Aided,2800,https://www.jyotinivascollege.edu.in,Jyoti Nivas College,Medium
+Miranda House,Delhi,Delhi,Govt,2900,https://www.mirandahouse.ac.in,Miranda House,Medium
+St. Stephen's College,Delhi,Delhi,Aided,1600,https://www.ststephens.edu,St. Stephen's College,Medium
+Lady Shri Ram College for Women,Delhi,Delhi,Govt,3100,https://www.lsr.edu.in,Lady Shri Ram College for Women,Medium
+Kirori Mal College,Delhi,Delhi,Govt,4200,https://www.kmc.ac.in,Kirori Mal College,Medium
+Hindu College,Delhi,Delhi,Govt,2600,https://www.hinducollege.ac.in,Hindu College,Medium
+Hansraj College,Delhi,Delhi,Govt,3000,https://www.hansrajcollege.ac.in,Hansraj College,Medium
+Ramjas College,Delhi,Delhi,Govt,3500,https://www.ramjascollege.edu.in,Ramjas College,Medium
+Indraprastha College for Women,Delhi,Delhi,Govt,2100,https://ipcollege.ac.in,Indraprastha College for Women,Medium
+Gargi College,Delhi,Delhi,Govt,2800,https://gargicollege.in,Gargi College,Medium
+Jesus and Mary College,Delhi,Delhi,Aided,1400,https://jesusandmarycollege.ac.in,Jesus and Mary College,Medium
+Loyola College,Tamil Nadu,Chennai,Aided,5200,https://www.loyolacollege.edu,Loyola College,Large
+Presidency College,Tamil Nadu,Chennai,Govt,3100,https://www.presidencychennai.ac.in,Presidency College,Medium
+Stella Maris College,Tamil Nadu,Chennai,Aided,3600,https://www.stellamariscollege.edu.in,Stella Maris College,Medium
+PSG College of Arts and Science,Tamil Nadu,Coimbatore,Aided,4800,https://www.psgcas.ac.in,PSG College of Arts and Science,Medium
+Govt. Arts College,Tamil Nadu,Coimbatore,Govt,2400,,Govt. Arts College,Medium
