@@ -1,56 +1,205 @@
-name,state,district,type,student_count,website
-St. Ann's College for Women,Telangana,Hyderabad,Private,1200,https://stanns.edu.in
-Osmania University College of Science,Telangana,Hyderabad,Govt,5000,https://www.osmania.ac.in
-Nizam College,Telangana,Hyderabad,Govt,3200,https://nizamcollege.ac.in
-SR & BGNR Govt. Degree College,Telangana,Karimnagar,Govt,1800,
-Kakatiya University College,Telangana,Warangal,Govt,4500,https://www.kakatiya.ac.in
-Aurora's Degree College,Telangana,Hyderabad,Private,900,https://www.auroradegree.ac.in
-St. Francis College for Women,Telangana,Hyderabad,Aided,1400,https://www.stfranciscollege.ac.in
-Govt. Degree College for Women,Telangana,Nizamabad,Govt,2100,
-Vasavi College of Engineering,Telangana,Hyderabad,Aided,3600,https://www.vasavicollege.ac.in
-JNTU Hyderabad,Telangana,Hyderabad,Govt,8000,https://www.jntuh.ac.in
-Muffakham Jah College of Engg,Telangana,Hyderabad,Aided,2800,https://www.mjcollege.ac.in
-Govt. City College,Telangana,Hyderabad,Govt,2400,
-St. Xavier's College,Maharashtra,Mumbai,Aided,3500,https://www.xaviers.edu
-Fergusson College,Maharashtra,Pune,Aided,4200,https://www.fergusson.edu
-Symbiosis College of Arts and Commerce,Maharashtra,Pune,Private,2800,https://www.symbiosiscollege.edu.in
-Elphinstone College,Maharashtra,Mumbai,Govt,3100,https://www.elphinstone.ac.in
-Ruparel College,Maharashtra,Mumbai,Aided,2900,https://www.ruparelcollege.org
-K.J. Somaiya College of Science,Maharashtra,Mumbai,Private,3400,https://kjssc.somaiya.edu
-COEP Technological University,Maharashtra,Pune,Govt,5600,https://www.coep.org.in
-Wadia College,Maharashtra,Pune,Aided,1600,https://www.wadiacollege.edu.in
-Govt. Vidharbha Institute of Science,Maharashtra,Amravati,Govt,2200,
-ICT Mumbai (UDCT),Maharashtra,Mumbai,Govt,1800,https://www.ictmumbai.edu.in
-Pune University Dept. of Chemistry,Maharashtra,Pune,Govt,1200,https://www.unipune.ac.in
-VPM's B N Bandodkar College,Maharashtra,Thane,Aided,2100,https://www.bnbandodkar.edu.in
-Christ University,Karnataka,Bengaluru,Private,6000,https://www.christuniversity.in
-Bangalore University College,Karnataka,Bengaluru,Govt,3800,https://www.bangaloreuniversity.ac.in
-Mount Carmel College,Karnataka,Bengaluru,Aided,3200,https://www.mountcarmelcollegeblr.ac.in
-St. Joseph's College of Commerce,Karnataka,Bengaluru,Aided,2700,https://www.sjcc.edu.in
-RV College of Engineering,Karnataka,Bengaluru,Private,5500,https://www.rvce.edu.in
-Mysore University Constituent College,Karnataka,Mysuru,Govt,4100,https://uni-mysore.ac.in
-Manipal College of Arts,Karnataka,Udupi,Private,2500,https://www.manipal.edu
-Govt. First Grade College Gulbarga,Karnataka,Kalaburagi,Govt,1900,
-BMS College of Engineering,Karnataka,Bengaluru,Aided,4700,https://www.bmsce.ac.in
-Govt. Science College Bengaluru,Karnataka,Bengaluru,Govt,2300,
-Jyoti Nivas College,Karnataka,Bengaluru,Aided,2800,https://www.jyotinivascollege.edu.in
-Miranda House,Delhi,Delhi,Govt,2900,https://www.mirandahouse.ac.in
-St. Stephen's College,Delhi,Delhi,Aided,1600,https://www.ststephens.edu
-Lady Shri Ram College for Women,Delhi,Delhi,Govt,3100,https://www.lsr.edu.in
-Kirori Mal College,Delhi,Delhi,Govt,4200,https://www.kmc.ac.in
-Hindu College,Delhi,Delhi,Govt,2600,https://www.hinducollege.ac.in
-Hansraj College,Delhi,Delhi,Govt,3000,https://www.hansrajcollege.ac.in
-Ramjas College,Delhi,Delhi,Govt,3500,https://www.ramjascollege.edu.in
-Indraprastha College for Women,Delhi,Delhi,Govt,2100,https://ipcollege.ac.in
-Gargi College,Delhi,Delhi,Govt,2800,https://gargicollege.in
-Jesus and Mary College,Delhi,Delhi,Aided,1400,https://jesusandmarycollege.ac.in
-Loyola College,Tamil Nadu,Chennai,Aided,5200,https://www.loyolacollege.edu
-Presidency College,Tamil Nadu,Chennai,Govt,3100,https://www.presidencychennai.ac.in
-Stella Maris College,Tamil Nadu,Chennai,Aided,3600,https://www.stellamariscollege.edu.in
-PSG College of Arts and Science,Tamil Nadu,Coimbatore,Aided,4800,https://www.psgcas.ac.in
-Govt. Arts College,Tamil Nadu,Coimbatore,Govt,2400,
-Madras Christian College,Tamil Nadu,Chennai,Aided,5900,https://www.mcc.edu.in
-Vellore Institute of Technology,Tamil Nadu,Vellore,Private,20000,https://www.vit.ac.in
-Annamalai University Constituent Coll,Tamil Nadu,Cuddalore,Govt,6200,https://www.annamalaiuniversity.ac.in
-Sri Ramakrishna College of Arts,Tamil Nadu,Coimbatore,Private,2900,https://www.srcas.ac.in
-Womens Christian College,Tamil Nadu,Chennai,Aided,2700,https://www.wcc.edu.in
+name,state,district,type,student_count,website,phone
+St. Ann's College for Women,Telangana,Hyderabad,Private,1200,https://stanns.edu.in,8888888888.0
+Osmania University College of Science,Telangana,Hyderabad,Govt,5000,https://www.osmania.ac.in,4027682363.0
+Nizam College,Telangana,Hyderabad,Govt,3200,https://nizamcollege.ac.in,4023230935.0
+SR & BGNR Govt. Degree College,Telangana,Karimnagar,Govt,1800,,8888888888.0
+Kakatiya University College,Telangana,Warangal,Govt,4500,https://www.kakatiya.ac.in,8702438866.0
+Aurora's Degree College,Telangana,Hyderabad,Private,900,https://www.auroradegree.ac.in,8792060443.0
+St. Francis College for Women,Telangana,Hyderabad,Aided,1400,https://www.stfranciscollege.ac.in,8888888888.0
+Govt. Degree College for Women,Telangana,Nizamabad,Govt,2100,,8888888888.0
+Vasavi College of Engineering,Telangana,Hyderabad,Aided,3600,https://www.vasavicollege.ac.in,4023146000.0
+JNTU Hyderabad,Telangana,Hyderabad,Govt,8000,https://www.jntuh.ac.in,4023158661.0
+Muffakham Jah College of Engg,Telangana,Hyderabad,Aided,2800,https://www.mjcollege.ac.in,4023312785.0
+Govt. City College,Telangana,Hyderabad,Govt,2400,,8888888888.0
+Hyderabad Public School,Telangana,Hyderabad,Private,1800,https://www.hps.edu.in,
+Narayana Junior College,Telangana,Hyderabad,Private,3200,https://www.narayanagroup.com,
+Sri Chaitanya Junior College,Telangana,Hyderabad,Private,4500,https://www.srichaitanya.net,
+Osmania Medical College,Telangana,Hyderabad,Govt,2800,https://osmaniamedicalcollege.org,4027682211.0
+Deccan College of Medical Sciences,Telangana,Hyderabad,Private,1200,https://dcmshyderabad.webnode.in,
+Hyderabad Institute of Technology,Telangana,Hyderabad,Private,2600,https://www.hitam.org,9980830836.0
+Chaitanya Bharathi Institute,Telangana,Hyderabad,Aided,3100,https://www.cbit.ac.in,4024193276.0
+Gokaraju Rangaraju Inst of Engg,Telangana,Hyderabad,Private,3400,https://www.griet.ac.in,4023044444.0
+KG Reddy College of Engineering,Telangana,Hyderabad,Private,2100,https://www.kgr.ac.in,4023044551.0
+Mahatma Gandhi Institute of Technology,Telangana,Hyderabad,Private,2800,https://www.mgit.ac.in,8050986576.0
+Sreenidhi Institute of Science,Telangana,Hyderabad,Private,3200,https://www.sreenidhi.edu.in,4027165554.0
+Govt. Degree College Nizamabad,Telangana,Nizamabad,Govt,1600,,8888888888.0
+Govt. Degree College Karimnagar,Telangana,Karimnagar,Govt,1400,,8888888888.0
+Satavahana University College,Telangana,Karimnagar,Govt,2200,https://www.satavahana.ac.in,8460208174.0
+Kakatiya Medical College,Telangana,Warangal,Govt,1800,https://www.kmcwarangal.ac.in,8702459033.0
+Warangal Institute of Technology,Telangana,Warangal,Private,2100,https://www.wits.ac.in,8712200500.0
+Govt. Degree College Mahbubnagar,Telangana,Mahbubnagar,Govt,1200,,8888888888.0
+Palamuru University College,Telangana,Mahbubnagar,Govt,1900,https://www.palamuruuniversity.ac.in,8542242800.0
+Govt. Degree College Khammam,Telangana,Khammam,Govt,1500,,8888888888.0
+Telangana University College,Telangana,Nizamabad,Govt,2400,https://www.telanganauniversity.ac.in,8462221350.0
+Lords Institute of Engineering,Telangana,Hyderabad,Private,2200,https://www.lords.ac.in,8792488281.0
+CVR College of Engineering,Telangana,Hyderabad,Private,2600,https://www.cvr.ac.in,8415252800.0
+TKR College of Engineering,Telangana,Hyderabad,Private,1900,https://www.tkrcet.ac.in,4023412666.0
+Govt. Degree College Adilabad,Telangana,Adilabad,Govt,1100,,8888888888.0
+Osmania University Law College,Telangana,Hyderabad,Govt,1400,https://www.osmania.ac.in,4027682364.0
+St. Mary's College for Women,Telangana,Hyderabad,Aided,1200,https://www.stmaryscollegehyd.com,8888888888.0
+Bhavans Vivekananda College,Telangana,Hyderabad,Aided,1600,https://www.bvvcollege.org,4027668985.0
+CMR College of Engineering,Telangana,Hyderabad,Private,2800,https://www.cmrcet.ac.in,4064640000.0
+Vardhaman College of Engineering,Telangana,Hyderabad,Private,3100,https://www.vardhaman.org,8415255444.0
+Aurora Engineering College,Telangana,Hyderabad,Private,2200,https://www.aec.edu.in,8904078708.0
+St. Xavier's College,Maharashtra,Mumbai,Aided,3500,https://www.xaviers.edu,8888888888.0
+Fergusson College,Maharashtra,Pune,Aided,4200,https://www.fergusson.edu,2025671235.0
+Symbiosis College of Arts and Commerce,Maharashtra,Pune,Private,2800,https://www.symbiosiscollege.edu.in,2025652444.0
+Elphinstone College,Maharashtra,Mumbai,Govt,3100,https://www.elphinstone.ac.in,2222041423.0
+Ruparel College,Maharashtra,Mumbai,Aided,2900,https://www.ruparelcollege.org,2224370209.0
+K.J. Somaiya College of Science,Maharashtra,Mumbai,Private,3400,https://kjssc.somaiya.edu,8888888888.0
+COEP Technological University,Maharashtra,Pune,Govt,5600,https://www.coep.org.in,2025507000.0
+Wadia College,Maharashtra,Pune,Aided,1600,https://www.wadiacollege.edu.in,2026163315.0
+Govt. Vidharbha Institute of Science,Maharashtra,Amravati,Govt,2200,,8888888888.0
+ICT Mumbai (UDCT),Maharashtra,Mumbai,Govt,1800,https://www.ictmumbai.edu.in,2233612222.0
+Pune University Dept. of Chemistry,Maharashtra,Pune,Govt,1200,https://www.unipune.ac.in,8888888888.0
+VPM's B N Bandodkar College,Maharashtra,Thane,Aided,2100,https://www.bnbandodkar.edu.in,2225446273.0
+Wilson College,Maharashtra,Mumbai,Aided,3200,https://www.wilsoncollege.edu,2222820661.0
+HR College of Commerce,Maharashtra,Mumbai,Aided,4100,https://www.hrcollege.edu,2222830661.0
+Mithibai College of Arts,Maharashtra,Mumbai,Aided,5200,https://www.mithibai.ac.in,2226608361.0
+KC College,Maharashtra,Mumbai,Aided,3600,https://www.kccollege.edu.in,2222821022.0
+Sophia College for Women,Maharashtra,Mumbai,Aided,2100,https://www.sophiacollegemumbai.com,2222820282.0
+Ramnarain Ruia College,Maharashtra,Mumbai,Aided,3100,https://www.ruiacollege.edu,8460295493.0
+Vaze Kelkar College,Maharashtra,Mumbai,Aided,2800,https://www.vazekelkarcollege.org,8460295493.0
+SP College Pune,Maharashtra,Pune,Govt,4600,https://www.spcollege.ac.in,7383438901.0
+Modern College of Arts Pune,Maharashtra,Pune,Aided,5100,https://www.moderncollegepune.edu.in,9035134492.0
+Abasaheb Garware College,Maharashtra,Pune,Aided,3900,https://www.agcollege.ac.in,2025652285.0
+Brihan Maharashtra College,Maharashtra,Pune,Aided,2700,https://www.bmcc.ac.in,2025534238.0
+Sir Parashurambhau College,Maharashtra,Pune,Aided,3400,https://www.spcollege.ac.in,2024331287.0
+Govt. College of Engineering Pune,Maharashtra,Pune,Govt,4800,https://www.gcoep.ac.in,8888888888.0
+Visvesvaraya NIT Nagpur,Maharashtra,Nagpur,Govt,5400,https://www.vnit.ac.in,7122223230.0
+Govt. Medical College Nagpur,Maharashtra,Nagpur,Govt,1800,https://www.gmcnagpur.com,8888888888.0
+Hislop College,Maharashtra,Nagpur,Aided,3200,https://www.hislopcollege.ac.in,7122533216.0
+Dr. Ambedkar College Nagpur,Maharashtra,Nagpur,Aided,2400,https://www.drambedkarcollege.ac.in,8888888888.0
+Walchand College of Engineering,Maharashtra,Sangli,Aided,3600,https://www.walchandsangli.ac.in,2332247001.0
+Shivaji University College,Maharashtra,Kolhapur,Govt,2800,https://www.unishivaji.ac.in,2312609000.0
+DY Patil College of Engineering,Maharashtra,Pune,Private,3900,https://www.dypvp.edu.in,2067106000.0
+Symbiosis Institute of Technology,Maharashtra,Pune,Private,2600,https://www.sit.edu.in,2028116200.0
+FLAME University,Maharashtra,Pune,Private,1800,https://www.flame.edu.in,2067906000.0
+MIT College of Engineering Pune,Maharashtra,Pune,Private,4200,https://www.mitcoe.edu.in,2030273000.0
+Bharati Vidyapeeth College of Engg,Maharashtra,Mumbai,Private,3100,https://www.bvcoem.edu.in,8511396358.0
+Somaiya Vidyavihar University,Maharashtra,Mumbai,Private,4600,https://www.somaiya.edu,2267283030.0
+NMIMS University Mumbai,Maharashtra,Mumbai,Private,5200,https://www.nmims.edu,2242355555.0
+Kishinchand Chellaram College,Maharashtra,Mumbai,Aided,3800,https://www.kccollege.edu.in,2222820661.0
+Nowrosjee Wadia College,Maharashtra,Pune,Aided,2200,https://www.wadiacollege.edu.in,2026163315.0
+Dharampeth College Nagpur,Maharashtra,Nagpur,Govt,2100,,7122556580.0
+Vidyanagari Arts Commerce College,Maharashtra,Mumbai,Govt,2400,https://www.mu.ac.in,2225198000.0
+Christ University,Karnataka,Bengaluru,Private,6000,https://www.christuniversity.in,8040129100.0
+Bangalore University College,Karnataka,Bengaluru,Govt,3800,https://www.bangaloreuniversity.ac.in,9035866070.0
+Mount Carmel College,Karnataka,Bengaluru,Aided,3200,https://www.mountcarmelcollegeblr.ac.in,8022213237.0
+St. Joseph's College of Commerce,Karnataka,Bengaluru,Aided,2700,https://www.sjcc.edu.in,8888888888.0
+RV College of Engineering,Karnataka,Bengaluru,Private,5500,https://www.rvce.edu.in,8067178000.0
+Mysore University Constituent College,Karnataka,Mysuru,Govt,4100,https://uni-mysore.ac.in,8735076637.0
+Manipal College of Arts,Karnataka,Udupi,Private,2500,https://www.manipal.edu,8202922073.0
+Govt. First Grade College Gulbarga,Karnataka,Kalaburagi,Govt,1900,,8888888888.0
+BMS College of Engineering,Karnataka,Bengaluru,Aided,4700,https://www.bmsce.ac.in,8026622130.0
+Govt. Science College Bengaluru,Karnataka,Bengaluru,Govt,2300,,8888888888.0
+Jyoti Nivas College,Karnataka,Bengaluru,Aided,2800,https://www.jyotinivascollege.edu.in,8401222532.0
+Indian Institute of Science,Karnataka,Bengaluru,Govt,3800,https://www.iisc.ac.in,8022932004.0
+National Law School of India,Karnataka,Bengaluru,Govt,800,https://www.nls.ac.in,8023213160.0
+St. Joseph's College Bengaluru,Karnataka,Bengaluru,Aided,3200,https://www.sjcollege.ac.in,8888888888.0
+Bishop Cotton Women's College,Karnataka,Bengaluru,Aided,2100,https://www.bishopcottonwomenscollege.com,8025201399.0
+PES University,Karnataka,Bengaluru,Private,5600,https://www.pes.edu,8026723500.0
+Ramaiah Institute of Technology,Karnataka,Bengaluru,Aided,4800,https://www.msrit.edu,8197430059.0
+Dayananda Sagar College,Karnataka,Bengaluru,Private,4200,https://www.dayanandasagar.edu,8026612011.0
+New Horizon College of Engineering,Karnataka,Bengaluru,Private,3600,https://www.newhorizonindia.edu,8028477717.0
+REVA University,Karnataka,Bengaluru,Private,4100,https://www.reva.edu.in,8064600000.0
+Alliance University,Karnataka,Bengaluru,Private,3800,https://www.alliance.edu.in,8030938000.0
+Govt. Science College Hassan,Karnataka,Hassan,Govt,1600,,8888888888.0
+Visvesvaraya Technological Univ,Karnataka,Belagavi,Govt,4200,https://www.vtu.ac.in,8312498100.0
+KLE Technological University,Karnataka,Belagavi,Private,3600,https://www.kletech.ac.in,8312498200.0
+SDM College of Engineering,Karnataka,Dharwad,Aided,2800,https://www.sdmcet.ac.in,8362447465.0
+BVB College of Engineering,Karnataka,Belagavi,Aided,3100,https://www.bvbcet.ac.in,8312407500.0
+JSS College of Arts,Karnataka,Mysuru,Aided,2600,https://www.jsscollegemysore.ac.in,8212548318.0
+Maharaja College Mysore,Karnataka,Mysuru,Govt,2900,https://www.maharajacollegemysore.ac.in,9035237383.0
+Yuvaraja College Mysore,Karnataka,Mysuru,Govt,2400,,
+Mangalore University College,Karnataka,Mangaluru,Govt,3200,https://www.mangaloreuniversity.ac.in,7383113475.0
+St. Aloysius College Mangalore,Karnataka,Mangaluru,Aided,3600,https://www.staloysius.edu.in,8888888888.0
+Canara College,Karnataka,Mangaluru,Aided,2800,https://www.canaracollege.ac.in,8733964036.0
+Govt. First Grade College Tumkur,Karnataka,Tumakuru,Govt,1800,,8888888888.0
+Siddaganga Institute of Technology,Karnataka,Tumakuru,Private,3400,https://www.sit.ac.in,8162273547.0
+NMKRV College for Women,Karnataka,Bengaluru,Aided,2600,https://www.nmkrv.ac.in,8026761222.0
+Seshadripuram College,Karnataka,Bengaluru,Aided,3100,https://www.seshadripuram.edu.in,8023449244.0
+CMR Institute of Technology,Karnataka,Bengaluru,Private,3200,https://www.cmrit.ac.in,8028524030.0
+Global Academy of Technology,Karnataka,Bengaluru,Private,2800,https://www.gat.ac.in,8511894358.0
+Nitte University College,Karnataka,Mangaluru,Private,2200,https://www.nitte.edu.in,7383113475.0
+East West College of Engineering,Karnataka,Bengaluru,Private,2400,https://www.ewit.edu,8028608252.0
+Christ Academy Institute,Karnataka,Bengaluru,Aided,1900,https://www.christacademy.ac.in,9980683270.0
+Miranda House,Delhi,Delhi,Govt,2900,https://www.mirandahouse.ac.in,1127666983.0
+St. Stephen's College,Delhi,Delhi,Aided,1600,https://www.ststephens.edu,8888888888.0
+Lady Shri Ram College for Women,Delhi,Delhi,Govt,3100,https://www.lsr.edu.in,1124111390.0
+Kirori Mal College,Delhi,Delhi,Govt,4200,https://www.kmc.ac.in,8147151090.0
+Hindu College,Delhi,Delhi,Govt,2600,https://www.hinducollege.ac.in,1127667184.0
+Hansraj College,Delhi,Delhi,Govt,3000,https://www.hansrajcollege.ac.in,1127667747.0
+Ramjas College,Delhi,Delhi,Govt,3500,https://www.ramjascollege.edu.in,8971836926.0
+Indraprastha College for Women,Delhi,Delhi,Govt,2100,https://ipcollege.ac.in,7411787155.0
+Gargi College,Delhi,Delhi,Govt,2800,https://gargicollege.in,1126494690.0
+Jesus and Mary College,Delhi,Delhi,Aided,1400,https://jesusandmarycollege.ac.in,1126881971.0
+Dyal Singh College,Delhi,Delhi,Govt,3200,https://www.dsc.du.ac.in,1127667001.0
+Daulat Ram College,Delhi,Delhi,Govt,2800,https://www.dr.du.ac.in,7795671366.0
+Sri Venkateswara College,Delhi,Delhi,Govt,3600,https://www.svc.ac.in,1124111399.0
+Atma Ram Sanatan Dharma College,Delhi,Delhi,Govt,4100,https://www.arsd.ac.in,8460480034.0
+Motilal Nehru College,Delhi,Delhi,Govt,3400,https://www.mlncollege.ac.in,1126115054.0
+Shyam Lal College,Delhi,Delhi,Govt,3100,https://www.shyamlal.du.ac.in,1122326139.0
+Janki Devi Memorial College,Delhi,Delhi,Govt,2600,https://www.jdmcollege.ac.in,8460226211.0
+Maitreyi College,Delhi,Delhi,Govt,2400,https://www.maitreyi.ac.in,1126110942.0
+Maharaja Agrasen College,Delhi,Delhi,Govt,3800,https://www.mac.du.ac.in,1127243022.0
+Acharya Narendra Dev College,Delhi,Delhi,Govt,2900,https://www.andc.ac.in,1122553950.0
+Shaheed Bhagat Singh College,Delhi,Delhi,Govt,3200,https://www.sbsc.ac.in,8460405970.0
+Keshav Mahavidyalaya,Delhi,Delhi,Govt,2100,https://www.keshav.du.ac.in,1127662609.0
+Sri Aurobindo College,Delhi,Delhi,Govt,2800,https://www.aurobindo.du.ac.in,1126521408.0
+Bhim Rao Ambedkar College,Delhi,Delhi,Govt,3100,https://www.brac.ac.in,1122385950.0
+Kalindi College,Delhi,Delhi,Govt,2900,https://www.kalindi.du.ac.in,1126848601.0
+Lakshmibai College,Delhi,Delhi,Govt,2400,https://www.lakshmibai.ac.in,1125093001.0
+Delhi College of Arts and Commerce,Delhi,Delhi,Govt,3400,https://www.dcac.du.ac.in,7947158024.0
+Jamia Millia Islamia,Delhi,Delhi,Govt,8600,https://www.jmi.ac.in,1126985507.0
+Jawaharlal Nehru University,Delhi,Delhi,Govt,6200,https://www.jnu.ac.in,1126742676.0
+Delhi Technological University,Delhi,Delhi,Govt,5800,https://www.dtu.ac.in,1127871018.0
+Indraprastha Institute of IT,Delhi,Delhi,Govt,3200,https://www.iiitd.ac.in,7411787155.0
+Amity University Delhi,Delhi,Delhi,Private,9400,https://www.amity.edu,1204392000.0
+Guru Gobind Singh Indraprastha Uni,Delhi,Delhi,Govt,7200,https://www.ipu.ac.in,1125302173.0
+Lady Irwin College,Delhi,Delhi,Govt,1800,https://www.ladyirwin.edu.in,1123388021.0
+College of Vocational Studies,Delhi,Delhi,Govt,2600,https://www.cvs.du.ac.in,1126161200.0
+Zakir Husain Delhi College,Delhi,Delhi,Govt,3100,https://www.zhdc.ac.in,1123239021.0
+Satyawati College,Delhi,Delhi,Govt,2800,https://www.satyawati.du.ac.in,1127284067.0
+Vivekananda College,Delhi,Delhi,Govt,2600,https://www.vivekananddcollege.ac.in,9054442408.0
+Shivaji College Delhi,Delhi,Delhi,Govt,2900,https://www.shivaji.du.ac.in,1125101218.0
+Loyola College,Tamil Nadu,Chennai,Aided,5200,https://www.loyolacollege.edu,4428175742.0
+Presidency College,Tamil Nadu,Chennai,Govt,3100,https://www.presidencychennai.ac.in,8128587791.0
+Stella Maris College,Tamil Nadu,Chennai,Aided,3600,https://www.stellamariscollege.edu.in,4428251948.0
+PSG College of Arts and Science,Tamil Nadu,Coimbatore,Aided,4800,https://www.psgcas.ac.in,4222572177.0
+Govt. Arts College,Tamil Nadu,Coimbatore,Govt,2400,,8888888888.0
+Madras Christian College,Tamil Nadu,Chennai,Aided,5900,https://www.mcc.edu.in,9606241461.0
+Vellore Institute of Technology,Tamil Nadu,Vellore,Private,20000,https://www.vit.ac.in,4162202020.0
+Annamalai University Constituent Coll,Tamil Nadu,Cuddalore,Govt,6200,https://www.annamalaiuniversity.ac.in,4144238343.0
+Sri Ramakrishna College of Arts,Tamil Nadu,Coimbatore,Private,2900,https://www.srcas.ac.in,4222543881.0
+Womens Christian College,Tamil Nadu,Chennai,Aided,2700,https://www.wcc.edu.in,9606241461.0
+IIT Madras,Tamil Nadu,Chennai,Govt,8200,https://www.iitm.ac.in,4422578000.0
+Anna University,Tamil Nadu,Chennai,Govt,6800,https://www.annauniv.edu,4422357004.0
+University of Madras,Tamil Nadu,Chennai,Govt,4200,https://www.unom.ac.in,4425399422.0
+Pachaiyappa's College,Tamil Nadu,Chennai,Aided,4600,https://www.pachaiyappascollege.org,4426210082.0
+Government Arts College Chennai,Tamil Nadu,Chennai,Govt,3200,https://www.gac.ac.in,4425362064.0
+Queen Mary's College,Tamil Nadu,Chennai,Govt,2800,https://www.qmc.ac.in,4428362010.0
+Lady Doak College,Tamil Nadu,Madurai,Aided,3100,https://www.ladydoakcollege.edu.in,4522530031.0
+American College Madurai,Tamil Nadu,Madurai,Aided,4200,https://www.americancollege.edu.in,7383444879.0
+Madurai Kamaraj University College,Tamil Nadu,Madurai,Govt,3600,https://www.mkuniversity.ac.in,4522458471.0
+Thiagarajar College,Tamil Nadu,Madurai,Aided,3400,https://www.tcarts.ac.in,4522312375.0
+Sri Krishna College of Engineering,Tamil Nadu,Coimbatore,Private,3800,https://www.skcet.ac.in,4222615510.0
+Kumaraguru College of Technology,Tamil Nadu,Coimbatore,Private,4100,https://www.kct.ac.in,4222669401.0
+Kongu Engineering College,Tamil Nadu,Erode,Aided,3600,https://www.kongu.edu,4294226585.0
+Salem College,Tamil Nadu,Salem,Govt,2400,https://www.salemcollege.ac.in,4272232501.0
+Periyar University College,Tamil Nadu,Salem,Govt,2100,https://www.periyaruniversity.ac.in,4272345766.0
+Bishop Heber College,Tamil Nadu,Tiruchirappalli,Aided,3200,https://www.bishophebercollegetry.ac.in,4312200500.0
+National College Tiruchirappalli,Tamil Nadu,Tiruchirappalli,Aided,2800,https://www.nationalcollegetrichy.ac.in,4312460966.0
+Bharathidasan University College,Tamil Nadu,Tiruchirappalli,Govt,2600,https://www.bdu.ac.in,4312407071.0
+Jamal Mohamed College,Tamil Nadu,Tiruchirappalli,Aided,3100,https://www.jmc.edu.in,8511408530.0
+Holy Cross College,Tamil Nadu,Tiruchirappalli,Aided,2900,https://www.holycrosstry.edu.in,8123769187.0
+Sathyabama Institute of Science,Tamil Nadu,Chennai,Private,6800,https://www.sathyabama.ac.in,7383413520.0
+Saveetha Engineering College,Tamil Nadu,Chennai,Private,4200,https://www.saveetha.ac.in,4426680025.0
+Sri Sairam Engineering College,Tamil Nadu,Chennai,Private,3800,https://www.sairam.edu.in,4422251000.0
+Vel Tech University,Tamil Nadu,Chennai,Private,3200,https://www.veltech.edu.in,4426840404.0
+SSN College of Engineering,Tamil Nadu,Chennai,Private,4400,https://www.ssn.edu.in,4427469700.0
+Ethiraj College for Women,Tamil Nadu,Chennai,Aided,2800,https://www.ethirajcollege.edu.in,4428272835.0
+Dr. Ambedkar Govt. Arts College,Tamil Nadu,Chennai,Govt,2400,https://www.ambedkararts.ac.in,8888888888.0
+Govt. Arts College Nandanam,Tamil Nadu,Chennai,Govt,2200,,8888888888.0
+Rajalakshmi Engineering College,Tamil Nadu,Chennai,Private,3600,https://www.rajalakshmi.org,4437181001.0
+Govt. Arts College Coimbatore,Tamil Nadu,Coimbatore,Govt,2600,,8888888888.0
