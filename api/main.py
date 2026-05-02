@@ -13,7 +13,7 @@ import os
 def get_engine():
     try:
         host = os.getenv("DB_HOST")
-        port = os.getenv("DB_PORT")
+        port = int( os.getenv("DB_USER",3306))
         user = os.getenv("DB_USER")
         password = os.getenv("DB_PASSWORD")
         db = os.getenv("DB_NAME", "kalnet_db")
