@@ -15,12 +15,12 @@ A searchable database of 500+ Indian schools and colleges with ICP (Ideal Custom
 
 | Name | Role | Files owned |
 |---|---|---|
-| Vangala Dhathrika | Pod Lead + DB Architect | `schema.sql`, `load_data.py`, `dashboard/app.py` |
-| Ushasree Nirumalla | Scraper Engineer 1 | `scrapers/udise_scraper.py` |
-| **Bhavani Gujjari** | **Scraper Engineer 2** | **`scrapers/aishe_scraper.py`, `scrapers/website_scraper.py`, `scrapers/justdial_scraper.py`** |
-| Chintala Trisha | ICP Scorer | `pipeline/icp_scorer.py` |
-| M. Goutham Reddy | API + Dashboard | `api/main.py`, `dashboard/app.py` |
-| Sangani Guna Sahithi | Data Cleaning + ML | `pipeline/clean_leads.py` |
+| Vangala Dhathrika | Pod Lead + DB Architect | `database/`, `load_data.py`, `Dashboard/app.py` |
+| Ushasree Nirumalla | Scraper Engineer 1 | `Scrapers/udise_scraper.py` |
+| **Bhavani Gujjari** | **Scraper Engineer 2** | **`Scrapers/aishe/`, `Scrapers/website_scraper.py`, `Scrapers/justdial_scraper.py`** |
+| Chintala Trisha | ICP Scorer | `Cleaning_Scoring/icp_scorer.py` |
+| M. Goutham Reddy | API + Dashboard | `main1.py`, `Dashboard/app.py` |
+| Sangani Guna Sahithi | Data Cleaning + ML | `Cleaning_Scoring/clean_leads.py` |
 
 ---
 
@@ -29,36 +29,45 @@ A searchable database of 500+ Indian schools and colleges with ICP (Ideal Custom
 ```
 KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM/
 │
-├── scrapers/
-│   ├── aishe_scraper.py        ← Bhavani: college records from AISHE
-│   ├── website_scraper.py      ← Bhavani: principal name + email
-│   ├── justdial_scraper.py     ← Bhavani: phone numbers
-│   ├── udise_scraper.py        ← Ushasree: school records from UDISE+
-│   └── errors.log              ← auto-generated: all scraping failures
+├── Scrapers/
+│   ├── __init__.py
+│   ├── aishe/                          ← Bhavani: AISHE college scraper (modular)
+│   │   ├── __init__.py                 ← package entry point
+│   │   ├── config.py                   ← ALL constants — change URLs/columns here only
+│   │   ├── aishe_api.py                ← Approach 1: AISHE HE Directory API
+│   │   ├── aishe_excel.py              ← Approach 2: AISHE Annual Excel download
+│   │   ├── aishe_fallback.py           ← Approach 3: curated 55-row safety dataset
+│   │   └── aishe_main.py               ← orchestrator — run this file
+│   ├── website_scraper.py              ← Bhavani: principal name + email
+│   ├── justdial_scraper.py             ← Bhavani: phone numbers
+│   ├── udise_scraper.py                ← Ushasree: school records from UDISE+
+│   └── errors.log                      ← auto-generated: all scraping failures
 │
 ├── data/
-│   ├── raw/
-│   │   ├── colleges_aishe.csv      ← Bhavani output (Week 1)
-│   │   ├── contacts_scraped.csv    ← Bhavani output (Week 2)
-│   │   ├── phones_scraped.csv      ← Bhavani output (Week 2)
-│   │   └── schools_udise.csv       ← Ushasree output
+│   ├── raw/                            ← all scraped CSVs saved here
+│   │   ├── colleges_aishe.csv          ← Bhavani output (Week 1)
+│   │   ├── contacts_scraped.csv        ← Bhavani output (Week 2)
+│   │   ├── phones_scraped.csv          ← Bhavani output (Week 2)
+│   │   └── schools_udise.csv           ← Ushasree output
 │   └── processed/
-│       └── leads_scored.csv        ← Trisha output
+│       └── leads_scored.csv            ← Trisha output (Tier 1 / 2 / 3)
 │
-├── pipeline/
-│   ├── clean_leads.py          ← Guna Sahithi
-│   └── icp_scorer.py           ← Trisha
+├── Cleaning_Scoring/
+│   ├── clean_leads.py                  ← Guna Sahithi
+│   └── icp_scorer.py                   ← Trisha
 │
-├── api/
-│   └── main.py                 ← Goutham Reddy (FastAPI)
+├── database/
+│   ├── __init__.py
+│   ├── config.py                       ← DB connection settings
+│   └── db_manager.py                   ← Dhathrika: MySQL connection + load
 │
-├── dashboard/
-│   └── app.py                  ← Dhathrika + Goutham (Streamlit)
+├── Dashboard/
+│   └── app.py                          ← Dhathrika + Goutham (Streamlit)
 │
-├── schema.sql                  ← Dhathrika: MySQL table definitions
-├── load_data.py                ← Dhathrika: CSV → MySQL loader
+├── logs/                               ← auto-generated: scraper logs
+├── main1.py                            ← Goutham: FastAPI entry point
 ├── requirements.txt
-├── .env.example
+├── .gitignore
 └── README.md
 ```
 
@@ -67,21 +76,22 @@ KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM/
 ## Setup
 
 ```bash
-# 1. Clone
+# 1. Clone the repo
 git clone https://github.com/Dhathrika05/KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM.git
 cd KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM
 
-# 2. Virtual environment
+# 2. Create virtual environment
 python -m venv venv
 source venv/bin/activate        # Mac / Linux
 venv\Scripts\activate           # Windows
 
-# 3. Install dependencies
+# 3. Install all dependencies
 pip install -r requirements.txt
 
-# 4. Environment variables
-cp .env.example .env
-# Edit .env — fill in your MySQL host, user, password, database name
+# 4. Create required local folders (gitignored — not in the repo)
+mkdir data\raw
+mkdir data\processed
+mkdir logs
 ```
 
 ---
@@ -89,28 +99,29 @@ cp .env.example .env
 ## Data flow
 
 ```
-AISHE HE Directory  ──►  aishe_scraper.py  ──►  data/raw/colleges_aishe.csv  ──┐
-UDISE+ Portal       ──►  udise_scraper.py  ──►  data/raw/schools_udise.csv   ──┤
-Institution websites ──► website_scraper.py ──► data/raw/contacts_scraped.csv ─┤
-JustDial listings   ──►  justdial_scraper.py ─► data/raw/phones_scraped.csv  ──┤
-                                                                                ▼
-                                                                       load_data.py
-                                                                            │
-                                                                            ▼
-                                                                      MySQL Database
-                                                                    (institutions +
-                                                                      contacts tables)
-                                                                            │
-                                                    ┌───────────────────────┤
-                                                    ▼                       ▼
-                                            clean_leads.py          FastAPI (main.py)
-                                                    │                       │
-                                                    ▼                       ▼
-                                             icp_scorer.py        Streamlit dashboard
-                                                    │                  (app.py)
-                                                    ▼
-                                        data/processed/leads_scored.csv
-                                              (Tier 1 / 2 / 3)
+AISHE HE Directory  ──►  Scrapers/aishe/aishe_main.py  ──►  data/raw/colleges_aishe.csv   ──┐
+UDISE+ Portal       ──►  Scrapers/udise_scraper.py     ──►  data/raw/schools_udise.csv    ──┤
+Institution websites ──► Scrapers/website_scraper.py   ──►  data/raw/contacts_scraped.csv ──┤
+JustDial listings   ──►  Scrapers/justdial_scraper.py  ──►  data/raw/phones_scraped.csv   ──┤
+                                                                                             ▼
+                                                                                  database/db_manager.py
+                                                                                          │
+                                                                                          ▼
+                                                                                    MySQL Database
+                                                                                 (institutions +
+                                                                                  contacts tables)
+                                                                                          │
+                                                              ┌───────────────────────────┤
+                                                              ▼                           ▼
+                                                   Cleaning_Scoring/              main1.py (FastAPI)
+                                                   clean_leads.py                         │
+                                                          │                               ▼
+                                                          ▼                       Dashboard/app.py
+                                                   icp_scorer.py                   (Streamlit)
+                                                          │
+                                                          ▼
+                                              data/processed/leads_scored.csv
+                                                    (Tier 1 / 2 / 3)
 ```
 
 ---
@@ -122,58 +133,62 @@ Always run in this order — each file depends on the previous output.
 ```bash
 # Week 1 — Run first
 # Produces: data/raw/colleges_aishe.csv
-python scrapers/aishe_scraper.py
+python -m Scrapers.aishe.aishe_main
 
-# Week 2 — Run after aishe_scraper.py
+# Week 2 — Run after aishe_main
 # Produces: data/raw/contacts_scraped.csv  (principal name + email)
-python scrapers/website_scraper.py
+python Scrapers/website_scraper.py
 
-# Week 2 — Run after website_scraper.py
+# Week 2 — Run after website_scraper
 # Produces: data/raw/phones_scraped.csv  (phone numbers)
-python scrapers/justdial_scraper.py
+python Scrapers/justdial_scraper.py
 ```
 
-All output CSV files are saved to `data\raw\` in the project folder. The folder is created automatically if it does not exist.
+> **Important:** `aishe_main.py` must be run with `python -m` because it uses relative imports inside the `Scrapers/aishe/` package. The other scrapers run directly with `python`.
 
-### How `aishe_scraper.py` works
+All output CSV files are saved to `data\raw\`. The folder is created automatically if it does not exist.
 
-Tries 3 approaches in order until one succeeds:
+---
 
-1. **AISHE HE Directory API** — calls `dashboard.aishe.gov.in` API endpoints for each of the 5 target states (MH, TS, DL, KA, TN). Returns college records with name, district, type, enrolment.
-2. **AISHE Annual Excel** — downloads the free annual Excel report from `aishe.gov.in`, filters to target states, extracts matching columns.
-3. **Curated 55-row fallback** — hardcoded real institutions used only when both live sources (API and Excel) are unavailable. Ensures the pipeline still runs and produces `data/raw/colleges_aishe.csv` even if the AISHE site is down.
+## How Bhavani's scrapers work
+
+### `Scrapers/aishe/` — AISHE college scraper (modular package)
+
+Split into 5 files so each part can be changed independently without touching the rest:
+
+| File | What it does |
+|---|---|
+| `config.py` | All constants — target states, API URLs, column name mappings, output path. Only file you need to edit if AISHE changes their structure. |
+| `aishe_api.py` | Calls AISHE HE Directory API for each of 5 target states. Has `_get_with_retry()` that retries 3× on timeout with increasing wait times. |
+| `aishe_excel.py` | Downloads free AISHE annual Excel from `aishe.gov.in`, filters to target states using vectorised pandas — no `iterrows()`. |
+| `aishe_fallback.py` | 204 hardcoded real institutions used only when both API and Excel are unavailable. |
+| `aishe_main.py` | Orchestrator — tries API → Excel → fallback. Writes CSV in chunks of 100 rows to avoid memory spikes at 500+ rows. |
 
 Output columns: `name, state, district, type, student_count, website`
 
-### How `website_scraper.py` works
+### `Scrapers/website_scraper.py`
 
-Reads `colleges_aishe.csv`, visits each institution's website About/Contact page, and extracts principal name and email using 3 strategies:
-
-- Strategy 1: Search heading/paragraph tags for keywords like "principal", "director"
-- Strategy 2: Find `mailto:` links for email addresses
-- Strategy 3: Scan table rows for label-value pairs
-
-Expected success rate: **60–70%**. Failures are logged to `scrapers/errors.log` — not crashes. Falls back to known contacts for well-known institutions.
+Reads `colleges_aishe.csv`, visits each institution's About/Contact page, extracts principal name and email using 3 strategies: heading/paragraph keyword search, `mailto:` links, and table row label-value pairs. Expected success rate **60–70%**. All failures logged to `Scrapers/errors.log` — not crashes.
 
 Output columns: `name, principal_name, email, website`
 
-### How `justdial_scraper.py` works
+### `Scrapers/justdial_scraper.py`
 
-Searches JustDial for each institution by name and city, extracts phone numbers using 4 strategies (class-based, `tel:` links, `data-*` attributes, regex). Saves a checkpoint every 25 rows so crashes don't lose progress.
+Searches JustDial for each institution by name and city, extracts phone numbers using 4 strategies (span class, `tel:` links, `data-*` attributes, regex). Saves a checkpoint every 25 rows so a crash never loses all progress.
 
 Output columns: `name, phone, district, state`
 
 ---
 
-## Known issues in current `aishe_scraper.py` — fix before Week 2
+## Known issues — fix before Week 2
 
-| # | Issue | Location | Fix |
+| # | Issue | File | Fix |
 |---|---|---|---|
-| 1 | `except:` bare except swallows all errors silently | `_safe_int()` and `_normalise_api()` | Change to `except (ValueError, AttributeError):` |
-| 2 | `board` column not produced | Output DataFrame | Add `"board": "University"` to each record |
-| 3 | `source` column missing | Output DataFrame | Add `"source": "aishe_api"` or `"aishe_fallback"` |
+| 1 | `except:` bare except swallows errors silently | `config.py` → `_safe_int()` | Change to `except (ValueError, AttributeError):` |
+| 2 | `board` column missing from output | `aishe_main.py` | Add `"board": "University"` to each record |
+| 3 | `source` column missing from output | all aishe files | Add `"source": "aishe_api"` / `"aishe_excel"` / `"aishe_fallback"` |
 
-These are needed for Dhathrika's `load_data.py` to work correctly with `schema.sql`.
+These columns are required by `database/db_manager.py` to load data into MySQL correctly.
 
 ---
 
@@ -183,12 +198,20 @@ These are needed for Dhathrika's `load_data.py` to work correctly with `schema.s
 |---|---|---|
 | 1 | `colleges_aishe.csv` — 50+ clean rows, push PR | DB schema live, team unblocked |
 | 2 | `contacts_scraped.csv` + `phones_scraped.csv` | 200+ institutions in MySQL |
-| 3 | Fix data issues flagged by Sahithi/Trisha | Dashboard live with search |
+| 3 | Fix data issues flagged by Sahithi / Trisha | Dashboard live with search |
 | 4 | Support integration, demo prep | ICP scoring on all 500 records |
 
 ---
 
+## Daily standup (9:30 AM WhatsApp to Dhathrika)
 
+```
+Done:    [what you completed yesterday]
+Doing:   [what you are working on today]
+Blocked: [anything stopping you — write NONE if nothing]
+```
+
+Dhathrika sends the compiled summary to Rishav by 10:00 AM.
 
 ---
 
@@ -196,26 +219,39 @@ These are needed for Dhathrika's `load_data.py` to work correctly with `schema.s
 
 ```bash
 # Never push directly to main
-# Create your branch
+
+# Step 1 — always pull latest before starting
+git checkout main
+git pull origin main
+
+# Step 2 — create your feature branch
 git checkout -b bhavani/aishe-scraper-week1
 
-# Stage and commit
-git add scrapers/aishe_scraper.py
-git commit -m "feat(scraper): add aishe_scraper.py with 3-approach fallback"
+# Step 3 — stage your files
+git add Scrapers/aishe/
+git add Scrapers/website_scraper.py
+git add Scrapers/justdial_scraper.py
+git add data/raw/colleges_aishe.csv
+git add requirements.txt
+git add README.md
 
-# Push and raise PR
+# Step 4 — commit
+git commit -m "feat(scraper): add AISHE modular package + website + justdial scrapers"
+
+# Step 5 — push and raise PR
 git push origin bhavani/aishe-scraper-week1
-# → Open PR on GitHub → request review from Dhathrika
+# → GitHub → Compare & pull request → assign Dhathrika as reviewer
 ```
 
 ### Commit message format
 
 ```
-feat(scraper): add aishe_scraper.py with API + Excel + fallback
-fix(scraper): handle bare except in _safe_int
+feat(scraper): add AISHE modular package with API + Excel + fallback
+fix(scraper): replace bare except with specific exception types
 feat(scraper): add website_scraper.py with 3 extraction strategies
-feat(scraper): add justdial_scraper.py with checkpoint save
+feat(scraper): add justdial_scraper.py with checkpoint save every 25 rows
 data: add colleges_aishe.csv 55 rows Week 1
+docs: update README to reflect new modular Scrapers/aishe/ structure
 ```
 
 ---
@@ -230,7 +266,7 @@ DB_PASSWORD=your_mysql_password
 DB_NAME=kalnet_leads
 ```
 
-Never commit `.env` to Git. It is in `.gitignore`.
+Never commit `.env` to Git — it is already in `.gitignore`.
 
 ---
 
@@ -257,11 +293,11 @@ python-dotenv==1.0.1
 
 | Source | URL | Used by |
 |---|---|---|
-| AISHE HE Directory | dashboard.aishe.gov.in/hedirectory | `aishe_scraper.py` |
-| AISHE Annual Report | aishe.gov.in/aishe-final-report | `aishe_scraper.py` |
-| UDISE+ Portal | udiseplus.gov.in | `udise_scraper.py` |
+| AISHE HE Directory | dashboard.aishe.gov.in/hedirectory | `Scrapers/aishe/aishe_api.py` |
+| AISHE Annual Report | aishe.gov.in/aishe-final-report | `Scrapers/aishe/aishe_excel.py` |
+| UDISE+ Portal | udiseplus.gov.in | `Scrapers/udise_scraper.py` |
 | BeautifulSoup docs | beautiful-soup-4.readthedocs.io | `website_scraper.py`, `justdial_scraper.py` |
-| Streamlit docs | docs.streamlit.io | `dashboard/app.py` |
+| Streamlit docs | docs.streamlit.io | `Dashboard/app.py` |
 
 ---
 
