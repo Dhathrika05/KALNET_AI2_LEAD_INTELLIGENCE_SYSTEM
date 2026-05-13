@@ -45,43 +45,60 @@ def clean_phone(phone):
     return cleaned
 
 def start_cleaning():
-    scraped_path = r'c:\Users\poolt\Desktop\data cleaning\KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM\data\raw\phones_scraped.csv'
+    phones_path = r'c:\Users\poolt\Desktop\data cleaning\KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM\data\raw\phones_scraped.csv'
+    contacts_path = r'c:\Users\poolt\Desktop\data cleaning\KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM\data\raw\contacts_scraped.csv'
     leads_path = r'c:\Users\poolt\Desktop\data cleaning\KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM\data\processed\cleaned_leads.csv'
     
-    print(f"Loading scraped data from {scraped_path}...")
-    df_scraped = pd.read_csv(scraped_path)
-    
-    print(f"Loading leads data from {leads_path}...")
+    print(f"Loading raw data...")
+    df_phones = pd.read_csv(phones_path)
+    df_contacts = pd.read_csv(contacts_path)
     df_leads = pd.read_csv(leads_path)
     
-    # Clean scraped phone numbers
-    print("Cleaning scraped phone numbers...")
-    df_scraped['phone_cleaned'] = df_scraped['phone'].apply(clean_phone)
+    # Clean phone numbers from phones_scraped
+    print("Cleaning phone numbers...")
+    df_phones['phone_cleaned'] = df_phones['phone'].apply(clean_phone)
     
-    # Normalize names for matching
-    df_scraped['name_norm'] = df_scraped['name'].apply(normalize_name)
+    # Normalize names for matching across all files
+    df_phones['name_norm'] = df_phones['name'].apply(normalize_name)
+    df_contacts['name_norm'] = df_contacts['name'].apply(normalize_name)
     df_leads['name_norm'] = df_leads['name'].apply(normalize_name)
     
-    # Create a mapping from normalized name to cleaned phone
-    phone_map = df_scraped.dropna(subset=['phone_cleaned']).set_index('name_norm')['phone_cleaned'].to_dict()
+    # Create mappings
+    phone_map = df_phones.dropna(subset=['phone_cleaned']).set_index('name_norm')['phone_cleaned'].to_dict()
+    email_map = df_contacts.dropna(subset=['email']).set_index('name_norm')['email'].to_dict()
+    principal_map = df_contacts.dropna(subset=['principal_name']).set_index('name_norm')['principal_name'].to_dict()
+    website_map = df_contacts.dropna(subset=['website']).set_index('name_norm')['website'].to_dict()
     
-    print("Updating phone numbers in leads...")
-    def update_phone(row):
-        # If phone is already present and not empty, keep it? 
-        # Or update it if it's empty.
+    print("Updating leads data with information from raw files...")
+    
+    def enrich_row(row):
+        # Update phone if empty
         if pd.isna(row['phone']) or str(row['phone']).strip() == "":
-            return phone_map.get(row['name_norm'], row['phone'])
-        return row['phone']
+            row['phone'] = phone_map.get(row['name_norm'], row['phone'])
+            
+        # Update email if empty
+        if pd.isna(row['email']) or str(row['email']).strip() == "":
+            row['email'] = email_map.get(row['name_norm'], row['email'])
+            
+        # Update principal_name if empty
+        if pd.isna(row['principal_name']) or str(row['principal_name']).strip() == "":
+            row['principal_name'] = principal_map.get(row['name_norm'], row['principal_name'])
+            
+        # Update website if empty
+        if pd.isna(row['website']) or str(row['website']).strip() == "":
+            row['website'] = website_map.get(row['name_norm'], row['website'])
+            
+        return row
     
-    df_leads['phone'] = df_leads.apply(update_phone, axis=1)
+    df_leads = df_leads.apply(enrich_row, axis=1)
     
-    # Remove the helper column
+    # Remove helper column
     df_leads = df_leads.drop(columns=['name_norm'])
     
     # Save back to cleaned_leads.csv
-    print(f"Saving updated leads to {leads_path}...")
+    print(f"Saving enriched leads to {leads_path}...")
     df_leads.to_csv(leads_path, index=False)
-    print("Cleaning and update process completed successfully.")
+    print("Enrichment process completed successfully.")
 
 if __name__ == "__main__":
     start_cleaning()
