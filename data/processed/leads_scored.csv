@@ -1,100 +1,204 @@
 name,state,district,type,board,student_count,company_size_category,website,principal_name,email,phone,icp_score,icp_tier
-Wadia College,Maharashtra,Pune,Aided,,1600,Large,wadiacollege.edu.in,,director.principal@nowrosjeewadiacollege.edu.in,2026163315,65,Tier2
-Govt. Vidharbha Institute Of Science,Maharashtra,Amravati,Govt,,2200,Large,,,,7212662466,40,Tier2
-Ict Mumbai (Udct),Maharashtra,Mumbai,Govt,,1800,Large,ictmumbai.edu.in,,vc@ictmumbai.edu.in,2233612222,65,Tier2
-Pune University Dept. Of Chemistry,Maharashtra,Pune,Govt,,1200,Medium,unipune.ac.in,,,2025693981,50,Tier2
-Vpm'S B N Bandodkar College,Maharashtra,Thane,Aided,,2100,Large,bnbandodkar.edu.in,,,2225446273,50,Tier2
-Wilson College,Maharashtra,Mumbai,Aided,,3200,Large,wilsoncollege.edu,,,2222820661,50,Tier2
+St. Ann'S College For Women,Telangana,Hyderabad,Private,,1200,Medium,stannscollegehyd.com,Dr.Sr.A.Vijaya Rani,info@stannscollegehyd.com,040 - 23513020,100,Tier1
+Osmania University College Of Science,Telangana,Hyderabad,Govt,,5000,Large,osmania.ac.in,Kumar Molugaram,vc@osmania.ac.in,040-27098048,75,Tier1
+Nizam College,Telangana,Hyderabad,Govt,,3200,Large,nizamcollege.ac.in,Dr Arati Jadhav,principal@nizamcollege.ac.in,8331997325,75,Tier1
+Sr & Bgnr Govt. Degree College,Telangana,Khammam,Govt,,1800,Large,srbgnrexams.ac.in,,srbgnriqac@gmail.com,8742228257,65,Tier2
+Kakatiya University College,Telangana,Warangal,Govt,,4500,Large,kakatiya.ac.in,Prof.T.Manohar,vc@kakatiya.ac.in,8702438866,75,Tier1
+Aurora'S Degree College,Telangana,Hyderabad,Private,,900,Medium,adc.edu.in,Dr. M.C.Ajay Kumar,info@adc.edu.in,4027662668,100,Tier1
+St. Francis College For Women,Telangana,Hyderabad,Aided,,1400,Medium,sfc.ac.in,Prof. Uma Joseph,info@sfc.ac.in,4023403200,75,Tier1
+Govt. Degree College For Women,Telangana,Nizamabad,Govt,,2100,Large,gpwnzb.dte.telangana.gov.in,Dr. S. Anuradha,gpw062nzb@gmail.com,9912342062,75,Tier1
+Vasavi College Of Engineering,Telangana,Hyderabad,Aided,,3600,Large,vce.ac.in,Dr. S.V.Ramana,principal@staff.vce.ac.in,4023146001,75,Tier1
+Jntu Hyderabad,Telangana,Hyderabad,Govt,,8000,Large,jntuh.ac.in,Dr. G Venkata Narasimha Reddy,gvnreddy@jntuh.ac.in,23057787,75,Tier1
+Muffakham Jah College Of Engg,Telangana,Hyderabad,Aided,,2800,Large,mjcollege.ac.in,Dr S Srinivasa Rao,principal@mjcollege.ac.in,4023280301,75,Tier1
+Govt. City College,Telangana,Hyderabad,Govt,,2400,Large,gdctg.cgg.gov.in/charminar.edu,,,4024604045,50,Tier2
+Hyderabad Public School,Telangana,Hyderabad,Private,,1800,Large,hpsbegumpet.org.in,Dr. Skand Bali,contactus@hpsbegumpet.org.in,4027761546,100,Tier1
+Narayana Junior College,Telangana,Hyderabad,Private,,3200,Large,narayanagroup.com,Phani Kumari Yellala,info@narayanagroup.com,18001023344,100,Tier1
+Sri Chaitanya Junior College,Telangana,Hyderabad,Private,,4500,Large,srichaitanya.net,,,4066060606,75,Tier1
+Osmania Medical College,Telangana,Hyderabad,Govt,,2800,Large,osmaniamedicalcollege.org,Dr. M. Raja Rao,omc_hyd-ts@nic.in,4027682363,75,Tier1
+Deccan College Of Medical Sciences,Telangana,Hyderabad,Private,,1200,Medium,dcms.ac.in,Dr. Ashfaq Hasan,principal@dcms.ac.in,4024340225,100,Tier1
+Hyderabad Institute Of Technology,Telangana,Hyderabad,Private,,2600,Large,hitam.org,Dr. J. Shivakumar,info@hitam.org,92487 11150,100,Tier1
+Chaitanya Bharathi Institute,Telangana,Hyderabad,Aided,,3100,Large,cbit.ac.in,Prof. C. V. Narasimhulu,principal@cbit.ac.in,8466997201,75,Tier1
+Gokaraju Rangaraju Inst Of Engg,Telangana,Hyderabad,Private,,3400,Large,griet.ac.in,,info@griet.ac.in,4023044901,90,Tier1
+Kg Reddy College Of Engineering,Telangana,Hyderabad,Private,,2100,Large,kgr.ac.in,Dr. S. Sai Satyanarayana Reddy,info@kgr.ac.in,9000633008,100,Tier1
+Mahatma Gandhi Institute Of Technology,Telangana,Hyderabad,Private,,2800,Large,mgit.ac.in,Prof. G. ChandraMohan Reddy,ao@mgit.ac.in,4023044914,100,Tier1
+Sreenidhi Institute Of Science,Telangana,Hyderabad,Private,,3200,Large,sreenidhi.edu.in,Dr. T. Ch. Siva Reddy,info@sreenidhi.edu.in,4027165554,100,Tier1
+Govt. Degree College Nizamabad,Telangana,Nizamabad,Govt,,1600,Large,gdctg.cgg.gov.in/nizamabad.edu,Mr. P.Ram Mohan Reddy,nizamabad.jkc@gmail.com,8462220423,75,Tier1
+Govt. Degree College Karimnagar,Telangana,Karimnagar,Govt,,1400,Medium,gdctg.cgg.gov.in/karimnagarwomen.edu,Prof. I. V. Chalapathi Rao,karimnagar.jkc@gmail.com,8782221034,75,Tier1
+Satavahana University College,Telangana,Karimnagar,Govt,,2200,Large,satavahana.ac.in,Dr. S. Ramakanth,registrarsatavahana@gmail.com,9912219097,75,Tier1
+Kakatiya Medical College,Telangana,Warangal,Govt,,1800,Large,kmcwgl.com,Dr. Sandhya Sunkaraneni,pwarangal@gmail.com,8702439033,75,Tier1
+Warangal Institute Of Technology,Telangana,Warangal,Private,,2100,Large,nitw.ac.in,Prof. N. V. Ramana Rao,,8702471200,85,Tier1
+Govt. Degree College Mahbubnagar,Telangana,Mahbubnagar,Govt,,1200,Medium,gdctg.cgg.gov.in/ntrwomen.edu,,ttwrdcgirls.mahabubnagar@gmail.com,8542224122,65,Tier2
+Palamuru University College,Telangana,Mahbubnagar,Govt,,1900,Large,palamuruuniversity.ac.in,Dr. P. Ramulu,registrar@palamuruuniversity.ac.in,8542277144,75,Tier1
+Govt. Degree College Khammam,Telangana,Khammam,Govt,,1500,Medium,gdctg.cgg.gov.in/khammamwomen.edu,Shivakrishna Kampati,,8742222417,60,Tier2
+Telangana University College,Telangana,Nizamabad,Govt,,2400,Large,telanganauniversity.ac.in,Praveen Mamidala,principaltusc@telanganauniversity.ac.in,8462221501,75,Tier1
+Lords Institute Of Engineering,Telangana,Hyderabad,Private,,2200,Large,lords.ac.in,Dr. Ravi Kishore Singh,principal@lords.ac.in,6309012442,100,Tier1
+Cvr College Of Engineering,Telangana,Hyderabad,Private,,2600,Large,cvr.ac.in,Dr. K. Ramamohan Reddy,kasarammohan@gmail.com,4041525300,100,Tier1
+Tkr College Of Engineering,Telangana,Hyderabad,Private,,1900,Large,tkrcet.ac.in,Dr. A. Ramaswami Reddy,info@tkrcet.ac.in,9849477550,100,Tier1
+Govt. Degree College Adilabad,Telangana,Adilabad,Govt,,1100,Medium,gdctg.cgg.gov.in/adilabadac.edu,,prl-gdc-adb-ce@telangana.gov.in,8732225455,65,Tier2
+Osmania University Law College,Telangana,Hyderabad,Govt,,1400,Medium,osmania.ac.in/lawcollege/,Gummadi Anuradha,lawcollege@osmania.ac.in,4027682363,75,Tier1
+St. Mary'S College For Women,Telangana,Hyderabad,Aided,,1200,Medium,stmaryscw.com,Dr.Manu Oommen,stmarycw@gmail.com,4023232892,75,Tier1
+Bhavans Vivekananda College,Telangana,Hyderabad,Aided,,1600,Large,bhavansvc.ac.in,Dr. G.S.V.R.K. Choudary,bvc@bhavansvc.ac.in,4027667900,75,Tier1
+Cmr College Of Engineering,Telangana,Hyderabad,Private,,2800,Large,cmrcet.ac.in,Dr. A Seshu Kumar,principal@cmrcet.ac.in,9248727210,100,Tier1
+Vardhaman College Of Engineering,Telangana,Hyderabad,Private,,3100,Large,vardhaman.org,Prof. J. V. R. Ravindra,pricipal@vardhaman.org,9502653333,100,Tier1
+Aurora Engineering College,Telangana,Hyderabad,Private,,2200,Large,aec.edu.in,Dr. M. Sreenivasa Reddy,office@aec.edu.in,7036076661,100,Tier1
+St. Xavier'S College,Maharashtra,Mumbai,Aided,,3500,Large,xaviers.edu,Prof. Dr. Karuna Gokarn,webadmin@xaviers.edu,2222620661,75,Tier1
+Fergusson College,Maharashtra,Pune,Aided,,4200,Large,fergusson.edu,Prof. (Dr.) Shyam Narayan Mude,principal@fergusson.edu,2067656000,75,Tier1
+Symbiosis College Of Arts And Commerce,Maharashtra,Pune,Private,,2800,Large,symbiosiscollege.edu.in,Dr. Hrishikesh Soman,contact@symbiosiscollege.edu.in,2025653903,100,Tier1
+Elphinstone College,Maharashtra,Mumbai,Govt,,3100,Large,elphinstone.ac.in,Dr. Saumitra Sawant,elphinstone1856@gmail.com,2222049237,75,Tier1
+Ruparel College,Maharashtra,Mumbai,Aided,,2900,Large,ruparel.edu,,principal@ruparel.edu,7208258147,65,Tier2
+K.J. Somaiya College Of Science,Maharashtra,Mumbai,Private,,3400,Large,kjssc.somaiya.edu,Dr Pradnya Prabhu,avradhakrishnan@somaiya.edu,2267283000,100,Tier1
+Coep Technological University,Maharashtra,Pune,Govt,,5600,Large,coeptech.ac.in,Dr. Sanjay Dambhare,coep@coeptech.ac.in,2025507002,75,Tier1
+Wadia College,Maharashtra,Pune,Aided,,1600,Large,wadiacollege.edu.in,,director.principal@nowrosjeewadiacollege.edu.in,02026163315,65,Tier2
+Govt. Vidharbha Institute Of Science,Maharashtra,Amravati,Govt,,2200,Large,,,,07212662466,40,Tier2
+Ict Mumbai (Udct),Maharashtra,Mumbai,Govt,,1800,Large,ictmumbai.edu.in,,vc@ictmumbai.edu.in,02233612222,65,Tier2
+Pune University Dept. Of Chemistry,Maharashtra,Pune,Govt,,1200,Medium,unipune.ac.in,,,02025693981,50,Tier2
+Vpm'S B N Bandodkar College,Maharashtra,Thane,Aided,,2100,Large,bnbandodkar.edu.in,,,02225446273,50,Tier2
+Wilson College,Maharashtra,Mumbai,Aided,,3200,Large,wilsoncollege.edu,,,02222820661,50,Tier2
 Hr College Of Commerce,Maharashtra,Mumbai,Aided,,4100,Large,hrcollege.edu,,principalconnect@hrcollege.edu,9326306348,65,Tier2
-Mithibai College Of Arts,Maharashtra,Mumbai,Aided,,5200,Large,mithibai.ac.in,,principal@mithibai.ac.in,2226608000,65,Tier2
-Kc College,Maharashtra,Mumbai,Aided,,3600,Large,kccollege.edu.in,,office@kccollege.edu.in,2222821022,65,Tier2
-Sophia College For Women,Maharashtra,Mumbai,Aided,,2100,Large,sophiacollegemumbai.com,,admin@sophiacollege.edu.in,2222820282,65,Tier2
-Ramnarain Ruia College,Maharashtra,Mumbai,Aided,,3100,Large,ruiacollege.edu,,principal@ruiacollege.edu,2269186201,65,Tier2
-Vaze Kelkar College,Maharashtra,Mumbai,Aided,,2800,Large,vazekelkarcollege.org,,,2224952882,50,Tier2
-Sp College Pune,Maharashtra,Pune,Govt,,4600,Large,spcollege.ac.in,,,2024331978,50,Tier2
+Mithibai College Of Arts,Maharashtra,Mumbai,Aided,,5200,Large,mithibai.ac.in,,principal@mithibai.ac.in,02226608000,65,Tier2
+Kc College,Maharashtra,Mumbai,Aided,,3600,Large,kccollege.edu.in,,office@kccollege.edu.in,02222821022,65,Tier2
+Sophia College For Women,Maharashtra,Mumbai,Aided,,2100,Large,sophiacollegemumbai.com,,admin@sophiacollege.edu.in,02222820282,65,Tier2
+Ramnarain Ruia College,Maharashtra,Mumbai,Aided,,3100,Large,ruiacollege.edu,,principal@ruiacollege.edu,02269186201,65,Tier2
+Vaze Kelkar College,Maharashtra,Mumbai,Aided,,2800,Large,vazekelkarcollege.org,,,02224952882,50,Tier2
+Sp College Pune,Maharashtra,Pune,Govt,,4600,Large,spcollege.ac.in,,,02024331978,50,Tier2
 Modern College Of Arts Pune,Maharashtra,Pune,Aided,,5100,Large,moderncollegepune.edu.in,,dascommercesf@moderncollegepune.edu.in,2025535468,65,Tier2
-Abasaheb Garware College,Maharashtra,Pune,Aided,,3900,Large,agcollege.ac.in,,abasahebgarwarecollege@gmail.com,2025656840,65,Tier2
+Abasaheb Garware College,Maharashtra,Pune,Aided,,3900,Large,agcollege.ac.in,,abasahebgarwarecollege@gmail.com,02025656840,65,Tier2
 Brihan Maharashtra College,Maharashtra,Pune,Aided,,2700,Large,bmcc.ac.in,,,2067656200,50,Tier2
-Sir Parashurambhau College,Maharashtra,Pune,Aided,,3400,Large,spcollege.ac.in,,addressprincipal@spcollegepune.ac.in,2972296296,65,Tier2
-Govt. College Of Engineering Pune,Maharashtra,Pune,Govt,,4800,Large,gcoep.ac.in,,aaglave.saarika@gppune.ac.in,2025507167,65,Tier2
-Visvesvaraya Nit Nagpur,Maharashtra,Nagpur,Govt,,5400,Large,vnit.ac.in,,deanacd@vnit.ac.in,7122223230,65,Tier2
-Govt. Medical College Nagpur,Maharashtra,Nagpur,Govt,,1800,Large,gmcnagpur.com,,,7122701133,50,Tier2
+Sir Parashurambhau College,Maharashtra,Pune,Aided,,3400,Large,spcollege.ac.in,,addressprincipal@spcollegepune.ac.in,02972296296,65,Tier2
+Govt. College Of Engineering Pune,Maharashtra,Pune,Govt,,4800,Large,gcoep.ac.in,,aaglave.saarika@gppune.ac.in,02025507167,65,Tier2
+Visvesvaraya Nit Nagpur,Maharashtra,Nagpur,Govt,,5400,Large,vnit.ac.in,,deanacd@vnit.ac.in,07122223230,65,Tier2
+Govt. Medical College Nagpur,Maharashtra,Nagpur,Govt,,1800,Large,gmcnagpur.com,,,07122701133,50,Tier2
 Hislop College,Maharashtra,Nagpur,Aided,,3200,Large,hislopcollege.ac.in,,info@hislopcollege.ac.in,8275490446,65,Tier2
-Dr. Ambedkar College Nagpur,Maharashtra,Nagpur,Aided,,2400,Large,drambedkarcollege.ac.in,,academicsection@dbatu.ac.in,7122726271,65,Tier2
-Walchand College Of Engineering,Maharashtra,Sangli,Aided,,3600,Large,walchandsangli.ac.in,,,2332247243,50,Tier2
-Shivaji University College,Maharashtra,Kolhapur,Govt,,2800,Large,unishivaji.ac.in,,accountssection@shivaji.du.ac.in,2312609000,65,Tier2
-Dy Patil College Of Engineering,Maharashtra,Pune,Private,,3900,Large,dypvp.edu.in,,_jobs@dypcoeakurdi.ac.in,2067106000,90,Tier1
-Symbiosis Institute Of Technology,Maharashtra,Pune,Private,,2600,Large,sit.edu.in,,director@sitpune.edu.in,2028116200,90,Tier1
+Dr. Ambedkar College Nagpur,Maharashtra,Nagpur,Aided,,2400,Large,drambedkarcollege.ac.in,,academicsection@dbatu.ac.in,07122726271,65,Tier2
+Walchand College Of Engineering,Maharashtra,Sangli,Aided,,3600,Large,walchandsangli.ac.in,,,02332247243,50,Tier2
+Shivaji University College,Maharashtra,Kolhapur,Govt,,2800,Large,unishivaji.ac.in,,accountssection@shivaji.du.ac.in,02312609000,65,Tier2
+Dy Patil College Of Engineering,Maharashtra,Pune,Private,,3900,Large,dypvp.edu.in,,_jobs@dypcoeakurdi.ac.in,02067106000,90,Tier1
+Symbiosis Institute Of Technology,Maharashtra,Pune,Private,,2600,Large,sit.edu.in,,director@sitpune.edu.in,02028116200,90,Tier1
 Flame University,Maharashtra,Pune,Private,,1800,Large,flame.edu.in,,enquiry@flame.edu.in,18002094567,90,Tier1
-Mit College Of Engineering Pune,Maharashtra,Pune,Private,,4200,Large,mitcoe.edu.in,,admissions@mitwpu.edu.in,2030273400,90,Tier1
-Bharati Vidyapeeth College Of Engg,Maharashtra,Mumbai,Private,,3100,Large,bvcoem.edu.in,,principal@bvcoenm.edu.in,2225139610,90,Tier1
-Somaiya Vidyavihar University,Maharashtra,Mumbai,Private,,4600,Large,somaiya.edu,,,2226728301,75,Tier1
-Nmims University Mumbai,Maharashtra,Mumbai,Private,,5200,Large,nmims.edu,Ess Svkm Essional Organizations,,8040855555,85,Tier1
+Mit College Of Engineering Pune,Maharashtra,Pune,Private,,4200,Large,mitcoe.edu.in,,admissions@mitwpu.edu.in,02030273400,90,Tier1
+Bharati Vidyapeeth College Of Engg,Maharashtra,Mumbai,Private,,3100,Large,bvcoem.edu.in,,principal@bvcoenm.edu.in,02225139610,90,Tier1
+Somaiya Vidyavihar University,Maharashtra,Mumbai,Private,,4600,Large,somaiya.edu,,,02226728301,75,Tier1
+Nmims University Mumbai,Maharashtra,Mumbai,Private,,5200,Large,nmims.edu,Ess Svkm Essional Organizations,,08040855555,85,Tier1
 Kishinchand Chellaram College,Maharashtra,Mumbai,Aided,,3800,Large,kccollege.edu.in,,info@kclawhsnc.edu.in,9156094565,65,Tier2
-Nowrosjee Wadia College,Maharashtra,Pune,Aided,,2200,Large,wadiacollege.edu.in,,mayurgohad@nowrosjeewadiacollege.edu.in,2026143928,65,Tier2
-Dharampeth College Nagpur,Maharashtra,Nagpur,Govt,,2100,Large,,,admin@rsmdacc.edu.in,7122557300,55,Tier2
-Vidyanagari Arts Commerce College,Maharashtra,Mumbai,Govt,,2400,Large,mu.ac.in,,,222708700,50,Tier2
-Christ University,Karnataka,Bengaluru,Private,,6000,Large,christuniversity.in,,registrar@christuniversity.in,8040129100,90,Tier1
-Bangalore University College,Karnataka,Bengaluru,Govt,,3800,Large,bangaloreuniversity.ac.in,,registrar@bub.ernet.in,8022961100,65,Tier2
-Mount Carmel College,Karnataka,Bengaluru,Aided,,3200,Large,mountcarmelcollegeblr.ac.in,,admission@mccblr.edu.in,8022261157,65,Tier2
-St. Joseph'S College Of Commerce,Karnataka,Bengaluru,Aided,,2700,Large,sjcc.edu.in,,libinfo@sjcc.edu.in,8022212010,65,Tier2
-Rv College Of Engineering,Karnataka,Bengaluru,Private,,5500,Large,rvce.edu.in,,principal@rvce.edu.in,8067178001,90,Tier1
-Mysore University Constituent College,Karnataka,Mysuru,Govt,,4100,Large,uni-mysore.ac.in,,registrar@uni-mysore.ac.in,8212419901,65,Tier2
-Manipal College Of Arts,Karnataka,Udupi,Private,,2500,Large,manipal.edu,,admissions@manipal.edu,8202922073,90,Tier1
-Govt. First Grade College Gulbarga,Karnataka,Kalaburagi,Govt,,1900,Large,,,ksoustudycentre@spcputtur.ac.in,8472263234,55,Tier2
-Bms College Of Engineering,Karnataka,Bengaluru,Aided,,4700,Large,bmsce.ac.in,,principal@bmsce.ac.in,8026622130,65,Tier2
-Govt. Science College Bengaluru,Karnataka,Bengaluru,Govt,,2300,Large,,,principal@lcechennai.edu.in,8022281723,55,Tier2
-Jyoti Nivas College,Karnataka,Bengaluru,Aided,,2800,Large,jyotinivascollege.edu.in,,,8025501444,50,Tier2
-Indian Institute Of Science,Karnataka,Bengaluru,Govt,,3800,Large,iisc.ac.in,,ascdean.ugacad@iisc.ac.in,8022932004,65,Tier2
-National Law School Of India,Karnataka,Bengaluru,Govt,,800,Medium,nls.ac.in,,admissions.ba@nls.ac.in,8023010000,65,Tier2
-St. Joseph'S College Bengaluru,Karnataka,Bengaluru,Aided,,3200,Large,sjcollege.ac.in,,christoselvan@sjc.ac.in,8025506424,65,Tier2
-Bishop Cotton Women'S College,Karnataka,Bengaluru,Aided,,2100,Large,bishopcottonwomenscollege.com,,admissions@bcwclc.edu.in,8025201908,65,Tier2
-Pes University,Karnataka,Bengaluru,Private,Deemed university,5600,Large,pes.edu,,admissions@pes.ac.in,8010297297,90,Tier1
-Ramaiah Institute Of Technology,Karnataka,Bengaluru,Private Aided,Autonomous,4800,Large,msrit.edu,,principal@msrit.edu,8023607902,90,Tier1
-Dayananda Sagar College,Karnataka,Bengaluru,Private,Autonomous,4200,Large,dsce.edu.in,,ppl-dsce@dayanandasagar.edu,8042161704,90,Tier1
+Nowrosjee Wadia College,Maharashtra,Pune,Aided,,2200,Large,wadiacollege.edu.in,,mayurgohad@nowrosjeewadiacollege.edu.in,02026143928,65,Tier2
+Dharampeth College Nagpur,Maharashtra,Nagpur,Govt,,2100,Large,,,admin@rsmdacc.edu.in,07122557300,55,Tier2
+Vidyanagari Arts Commerce College,Maharashtra,Mumbai,Govt,,2400,Large,mu.ac.in,,,0222708700,50,Tier2
+Christ University,Karnataka,Bengaluru,Private,,6000,Large,christuniversity.in,,registrar@christuniversity.in,08040129100,90,Tier1
+Bangalore University College,Karnataka,Bengaluru,Govt,,3800,Large,bangaloreuniversity.ac.in,,registrar@bub.ernet.in,08022961100,65,Tier2
+Mount Carmel College,Karnataka,Bengaluru,Aided,,3200,Large,mountcarmelcollegeblr.ac.in,,admission@mccblr.edu.in,08022261157,65,Tier2
+St. Joseph'S College Of Commerce,Karnataka,Bengaluru,Aided,,2700,Large,sjcc.edu.in,,libinfo@sjcc.edu.in,08022212010,65,Tier2
+Rv College Of Engineering,Karnataka,Bengaluru,Private,,5500,Large,rvce.edu.in,,principal@rvce.edu.in,08067178001,90,Tier1
+Mysore University Constituent College,Karnataka,Mysuru,Govt,,4100,Large,uni-mysore.ac.in,,registrar@uni-mysore.ac.in,08212419901,65,Tier2
+Manipal College Of Arts,Karnataka,Udupi,Private,,2500,Large,manipal.edu,,admissions@manipal.edu,08202922073,90,Tier1
+Govt. First Grade College Gulbarga,Karnataka,Kalaburagi,Govt,,1900,Large,,,ksoustudycentre@spcputtur.ac.in,08472263234,55,Tier2
+Bms College Of Engineering,Karnataka,Bengaluru,Aided,,4700,Large,bmsce.ac.in,,principal@bmsce.ac.in,08026622130,65,Tier2
+Govt. Science College Bengaluru,Karnataka,Bengaluru,Govt,,2300,Large,,,principal@lcechennai.edu.in,08022281723,55,Tier2
+Jyoti Nivas College,Karnataka,Bengaluru,Aided,,2800,Large,jyotinivascollege.edu.in,,,08025501444,50,Tier2
+Indian Institute Of Science,Karnataka,Bengaluru,Govt,,3800,Large,iisc.ac.in,,ascdean.ugacad@iisc.ac.in,08022932004,65,Tier2
+National Law School Of India,Karnataka,Bengaluru,Govt,,800,Medium,nls.ac.in,,admissions.ba@nls.ac.in,08023010000,65,Tier2
+St. Joseph'S College Bengaluru,Karnataka,Bengaluru,Aided,,3200,Large,sjcollege.ac.in,,christoselvan@sjc.ac.in,08025506424,65,Tier2
+Bishop Cotton Women'S College,Karnataka,Bengaluru,Aided,,2100,Large,bishopcottonwomenscollege.com,,admissions@bcwclc.edu.in,08025201908,65,Tier2
+Pes University,Karnataka,Bengaluru,Private,Deemed university,5600,Large,pes.edu,,admissions@pes.ac.in,08010297297,90,Tier1
+Ramaiah Institute Of Technology,Karnataka,Bengaluru,Private Aided,Autonomous,4800,Large,msrit.edu,,principal@msrit.edu,08023607902,90,Tier1
+Dayananda Sagar College,Karnataka,Bengaluru,Private,Autonomous,4200,Large,dsce.edu.in,,ppl-dsce@dayanandasagar.edu,08042161704,90,Tier1
 New Horizon College Of Engineering,Karnataka,Bengaluru,Private,Autonoumous,3600,Large,newhorizonindia.edu,,admissionsnhce@newhorizonindia.edu,9880534935,90,Tier1
-Reva University,Karnataka,Bengaluru,Private,Deemed University,4100,Large,reva.edu.in,,admissions@reva.edu.in,8046966966,90,Tier1
-Alliance University,Karnataka,Bengaluru,Private,,3800,Large,alliance.edu.in,,admissions@alliance.edu.in,8046199000,90,Tier1
-Govt. Science College Hassan,Karnataka,Hassan,Govt,,1600,Large,gsch.in,,gschassan@gmail.com,8172268248,65,Tier2
-Visvesvaraya Technological Univ,Karnataka,Belagavi,Govt,,4200,Large,vtu.ac.in,,register@vtu.ac.in,8312498100,65,Tier2
-Kle Technological University,Karnataka,Belagavi,Private,,3600,Large,kletech.ac.in,N.H. Ayachit,prochancellor@kletech.ac.in,8362378101,100,Tier1
-Sdm College Of Engineering,Karnataka,Dharwad,Aided,,2800,Large,sdmcet.ac.in,,principal@sdmcet.ac.in,8362255619,65,Tier2
-Jss College Of Arts,Karnataka,Mysuru,Aided,,2600,Large,jsscollegemysore.ac.in,M.P. Vijyaendra Swamy,jssautonomous@gmail.com,8212548236,75,Tier1
-Maharaja College Mysore,Karnataka,Mysuru,Govt,,2900,Large,maharajacollegemysore.ac.in,B. Nagarajamurthy,principalmaharaja@gmail.com,821249292,75,Tier1
-Yuvaraja College Mysore,Karnataka,Mysuru,Govt,,2400,Large,ycm.uni-mysore.ac.in,B.N. Yashodha,principal@ycm.uni-mysore.ac.in,8212548337,75,Tier1
+Reva University,Karnataka,Bengaluru,Private,Deemed University,4100,Large,reva.edu.in,,admissions@reva.edu.in,08046966966,90,Tier1
+Alliance University,Karnataka,Bengaluru,Private,,3800,Large,alliance.edu.in,,admissions@alliance.edu.in,08046199000,90,Tier1
+Govt. Science College Hassan,Karnataka,Hassan,Govt,,1600,Large,gsch.in,,gschassan@gmail.com,08172268248,65,Tier2
+Visvesvaraya Technological Univ,Karnataka,Belagavi,Govt,,4200,Large,vtu.ac.in,,register@vtu.ac.in,08312498100,65,Tier2
+Kle Technological University,Karnataka,Belagavi,Private,,3600,Large,kletech.ac.in,N.H. Ayachit,prochancellor@kletech.ac.in,08362378101,100,Tier1
+Sdm College Of Engineering,Karnataka,Dharwad,Aided,,2800,Large,sdmcet.ac.in,,principal@sdmcet.ac.in,08362255619,65,Tier2
+Jss College Of Arts,Karnataka,Mysuru,Aided,,2600,Large,jsscollegemysore.ac.in,M.P. Vijyaendra Swamy,jssautonomous@gmail.com,08212548236,75,Tier1
+Maharaja College Mysore,Karnataka,Mysuru,Govt,,2900,Large,maharajacollegemysore.ac.in,B. Nagarajamurthy,principalmaharaja@gmail.com,0821249292,75,Tier1
+Yuvaraja College Mysore,Karnataka,Mysuru,Govt,,2400,Large,ycm.uni-mysore.ac.in,B.N. Yashodha,principal@ycm.uni-mysore.ac.in,08212548337,75,Tier1
 Mangalore University College,Karnataka,Mangaluru,Govt,,3200,Large,mangaloreuniversity.ac.in,Anasuya Rai,ucmangalore1@gmail.com,9481608909,75,Tier1
-St. Aloysius College Mangalore,Karnataka,Mangaluru,Aided,,3600,Large,staloysius.edu.in,Praveen Martis SJ,Principal@staloysius.edu.in,8244117704,75,Tier1
-Canara College,Karnataka,Mangaluru,Aided,,2800,Large,canaracollege.ac.in,Premalatha V,info@canara.ac.in,8242496600,75,Tier1
-Govt. First Grade College Tumkur,Karnataka,Tumakuru,Govt,,1800,Large,gfgc.karnataka.gov.in,T.S. Shashikumar,gfgctumkur@gmail.com,8162272004,75,Tier1
+St. Aloysius College Mangalore,Karnataka,Mangaluru,Aided,,3600,Large,staloysius.edu.in,Praveen Martis SJ,Principal@staloysius.edu.in,08244117704,75,Tier1
+Canara College,Karnataka,Mangaluru,Aided,,2800,Large,canaracollege.ac.in,Premalatha V,info@canara.ac.in,08242496600,75,Tier1
+Govt. First Grade College Tumkur,Karnataka,Tumakuru,Govt,,1800,Large,gfgc.karnataka.gov.in,T.S. Shashikumar,gfgctumkur@gmail.com,08162272004,75,Tier1
 Siddaganga Institute Of Technology,Karnataka,Tumakuru,Private,,3400,Large,sit.ac.in,S.V. Dinesh,principal@sit.ac.in,8162282696,100,Tier1
-Nmkrv College For Women,Karnataka,Bengaluru,Aided,,2600,Large,nmkrv.ac.in,Suchithra R. Nair,principal.nmkrvpu@rvei.edu.in,8026637042,75,Tier1
-Seshadripuram College,Karnataka,Bengaluru,Aided,,3100,Large,spmcollege.ac.in,Anandappa Iranmukhadavar,info@spmcollege.ac.in,8022955354,75,Tier1
-Cmr Institute Of Technology,Karnataka,Bengaluru,Private,,3200,Large,cmrit.ac.in,Sanjay Jain,principal@cmrit.ac.in,8028524466,100,Tier1
-Global Academy Of Technology,Karnataka,Bengaluru,Private,,2800,Large,gat.ac.in,Balakrishna H.B.,info@gat.ac.in,8028603158,100,Tier1
-Nitte University College,Karnataka,Mangaluru,Private,,2200,Large,nitte.edu.in,Niranjan N. Chiplunkar,principal_nmamit@nitte.edu.in,8242204300,100,Tier1
-East West College Of Engineering,Karnataka,Bengaluru,Private,,2400,Large,ewce.edu.in,Santhosh Kumar G.,principal@ewce.edu.in,8028566115,100,Tier1
-Christ Academy Institute,Karnataka,Bengaluru,Aided,,1900,Large,caias.in,Davis Panadan,office@caias.in,8035215155,75,Tier1
-Miranda House,Delhi,Delhi,Govt,,2900,Large,mirandahouse.ac.in,Bijayalaxmi Nanda,principal@mirandahouse.ac.in,1127667437,75,Tier1
-St. Stephen'S College,Delhi,Delhi,Aided,,1600,Large,ststephens.edu,Jhon Varghese,principal@ststephens.edu,1127667200,75,Tier1
-Lady Shri Ram College For Women,Delhi,Delhi,Govt,,3100,Large,lsr.edu.in,Suman Sharma,lsrc@lsr.edu.in,1126434459,75,Tier1
-Kirori Mal College,Delhi,Delhi,Govt,,4200,Large,kmc.du.ac.in,Dinesh Khattar,principal@kmc.du.ac.in,1127667939,75,Tier1
-Hindu College,Delhi,Delhi,Govt,,2600,Large,hinducollege.ac.in,Anju Srivatava,principal@hinducollege.org,1127667184,75,Tier1
-Hansraj College,Delhi,Delhi,Govt,,3000,Large,hansrajcollege.ac.in,Rama,,1127667458,60,Tier2
-Ramjas College,Delhi,Delhi,Govt,,3500,Large,ramjascollege.edu.in,Manoj Kumar Khanna,principal@ramjas.du.ac.in,1127667706,75,Tier1
-Indraprastha College For Women,Delhi,Delhi,Govt,,2100,Large,ipcollege.ac.in,Poonam Kumria,ipcw@ip.du.ac.in,1123954085,75,Tier1
-Gargi College,Delhi,Delhi,Govt,,2800,Large,gargicollege.in,Vandna Luthra,gargicollege@gargi.du.ac.in,1126497697,75,Tier1
-Jesus And Mary College,Delhi,Delhi,Aided,,1400,Medium,jesusandmarycollege.ac.in,Molly K.A.,principal@jmc.du.ac.in,1126110041,75,Tier1
-Dyal Singh College,Delhi,Delhi,Govt,,3200,Large,dsc.du.ac.in,V.K. Paliwal,principal@dsc.du.ac.in,1124367819,75,Tier1
+Nmkrv College For Women,Karnataka,Bengaluru,Aided,,2600,Large,nmkrv.ac.in,Suchithra R. Nair,principal.nmkrvpu@rvei.edu.in,08026637042,75,Tier1
+Seshadripuram College,Karnataka,Bengaluru,Aided,,3100,Large,spmcollege.ac.in,Anandappa Iranmukhadavar,info@spmcollege.ac.in,08022955354,75,Tier1
+Cmr Institute Of Technology,Karnataka,Bengaluru,Private,,3200,Large,cmrit.ac.in,Sanjay Jain,principal@cmrit.ac.in,08028524466,100,Tier1
+Global Academy Of Technology,Karnataka,Bengaluru,Private,,2800,Large,gat.ac.in,Balakrishna H.B.,info@gat.ac.in,08028603158,100,Tier1
+Nitte University College,Karnataka,Mangaluru,Private,,2200,Large,nitte.edu.in,Niranjan N. Chiplunkar,principal_nmamit@nitte.edu.in,08242204300,100,Tier1
+East West College Of Engineering,Karnataka,Bengaluru,Private,,2400,Large,ewce.edu.in,Santhosh Kumar G.,principal@ewce.edu.in,08028566115,100,Tier1
+Christ Academy Institute,Karnataka,Bengaluru,Aided,,1900,Large,caias.in,Davis Panadan,office@caias.in,08035215155,75,Tier1
+Miranda House,Delhi,Delhi,Govt,,2900,Large,mirandahouse.ac.in,Bijayalaxmi Nanda,principal@mirandahouse.ac.in,01127667437,75,Tier1
+St. Stephen'S College,Delhi,Delhi,Aided,,1600,Large,ststephens.edu,Jhon Varghese,principal@ststephens.edu,01127667200,75,Tier1
+Lady Shri Ram College For Women,Delhi,Delhi,Govt,,3100,Large,lsr.edu.in,Suman Sharma,lsrc@lsr.edu.in,01126434459,75,Tier1
+Kirori Mal College,Delhi,Delhi,Govt,,4200,Large,kmc.du.ac.in,Dinesh Khattar,principal@kmc.du.ac.in,01127667939,75,Tier1
+Hindu College,Delhi,Delhi,Govt,,2600,Large,hinducollege.ac.in,Anju Srivatava,principal@hinducollege.org,01127667184,75,Tier1
+Hansraj College,Delhi,Delhi,Govt,,3000,Large,hansrajcollege.ac.in,Rama,,01127667458,60,Tier2
+Ramjas College,Delhi,Delhi,Govt,,3500,Large,ramjascollege.edu.in,Manoj Kumar Khanna,principal@ramjas.du.ac.in,01127667706,75,Tier1
+Indraprastha College For Women,Delhi,Delhi,Govt,,2100,Large,ipcollege.ac.in,Poonam Kumria,ipcw@ip.du.ac.in,01123954085,75,Tier1
+Gargi College,Delhi,Delhi,Govt,,2800,Large,gargicollege.in,Vandna Luthra,gargicollege@gargi.du.ac.in,01126497697,75,Tier1
+Jesus And Mary College,Delhi,Delhi,Aided,,1400,Medium,jesusandmarycollege.ac.in,Molly K.A.,principal@jmc.du.ac.in,01126110041,75,Tier1
+Dyal Singh College,Delhi,Delhi,Govt,,3200,Large,dsc.du.ac.in,V.K. Paliwal,principal@dsc.du.ac.in,01124367819,75,Tier1
 Daulat Ram College,Delhi,Delhi,Govt,,2800,Large,dr.du.ac.in,Savitha Roy,darshan@dr.du.ac.in,9821382457,75,Tier1
-Sri Venkateswara College,Delhi,Delhi,Govt,,3600,Large,svc.ac.in,Chandramani Singh,principal@svc.ac.in,1124112390,75,Tier1
-Atma Ram Sanatan Dharma College,Delhi,Delhi,Govt,,4100,Large,arsdcollege.ac.in,Gyantosh Kumar Jha,principal.arsdcollege@gmail.com,1124113436,75,Tier1
-Motilal Nehru College,Delhi,Delhi,Govt,,3400,Large,mlncdu.ac.in,Yogeshwar Sharma,motilalnehru64@gmail.com,1126112604,75,Tier1
-Shyam Lal College,Delhi,Delhi,Govt,,3100,Large,slc.du.ac.in,Rabi Naryan Kar,slcm@shyamlal.du.ac.in,1135016514,75,Tier1
-Janki Devi Memorial College,Delhi,Delhi,Govt,,2600,Large,jdm.ac.in,Swati Pal,principal@jdm.du.ac.in,1149876630,75,Tier1
+Sri Venkateswara College,Delhi,Delhi,Govt,,3600,Large,svc.ac.in,Chandramani Singh,principal@svc.ac.in,01124112390,75,Tier1
+Atma Ram Sanatan Dharma College,Delhi,Delhi,Govt,,4100,Large,arsdcollege.ac.in,Gyantosh Kumar Jha,principal.arsdcollege@gmail.com,01124113436,75,Tier1
+Motilal Nehru College,Delhi,Delhi,Govt,,3400,Large,mlncdu.ac.in,Yogeshwar Sharma,motilalnehru64@gmail.com,01126112604,75,Tier1
+Shyam Lal College,Delhi,Delhi,Govt,,3100,Large,slc.du.ac.in,Rabi Naryan Kar,slcm@shyamlal.du.ac.in,01135016514,75,Tier1
+Janki Devi Memorial College,Delhi,Delhi,Govt,,2600,Large,jdm.ac.in,Swati Pal,principal@jdm.du.ac.in,01149876630,75,Tier1
 Maitreyi College,Delhi,Delhi,Govt,,2400,Large,maitreyi.ac.in,Haritma Chopra,maitreyi1967@yahoo.co.in,9311331434,75,Tier1
-Maharaja Agrasen College,Delhi,Delhi,Govt,,3800,Large,mac.du.ac.in,Sanjeev Kumar Tiwari,principal@mac.du.ac.in,1122610563,75,Tier1
+Maharaja Agrasen College,Delhi,Delhi,Govt,,3800,Large,mac.du.ac.in,Sanjeev Kumar Tiwari,principal@mac.du.ac.in,01122610563,75,Tier1
 Acharya Narendra Dev College,Delhi,Delhi,Govt,,2900,Large,andcollege.ac.in,Amit Garg,principal@andc.du.ac.in,9839167801,75,Tier1
-Shaheed Bhagat Singh College,Delhi,Delhi,Govt,,3200,Large,sbsc.ac.in,Arun Kumar Attree,principal@sbs.du.ac.in,1126250306,75,Tier1
-Keshav Mahavidyalaya,Delhi,Delhi,Govt,,2100,Large,keshav.du.ac.in,Madhu Pruthi,principal@keshav.du.ac.in,1127018805,75,Tier1
+Shaheed Bhagat Singh College,Delhi,Delhi,Govt,,3200,Large,sbsc.ac.in,Arun Kumar Attree,principal@sbs.du.ac.in,01126250306,75,Tier1
+Keshav Mahavidyalaya,Delhi,Delhi,Govt,,2100,Large,keshav.du.ac.in,Madhu Pruthi,principal@keshav.du.ac.in,01127018805,75,Tier1
 Sri Aurobindo College,Delhi,Delhi,Govt,,2800,Large,aurobindo.du.ac.in,Arun Choudhary,principal@aurobindo.du.ac.in,1140536164,75,Tier1
-Bhim Rao Ambedkar College,Delhi,Delhi,Govt,,3100,Large,brac.ac.in,,info@drbramdedkarcollege.ac.in,1122814126,65,Tier2
+Bhim Rao Ambedkar College,Delhi,Delhi,Govt,,3100,Large,brac.ac.in,,info@drbramdedkarcollege.ac.in,01122814126,65,Tier2
+Kalindi College,Delhi,Delhi,Govt,,2900,Large,kalindi.du.ac.in,Prof. Meena Charanda,kalindisampark@kalindi.du.ac.in,011-25787604,75,Tier1
+Lakshmibai College,Delhi,Delhi,Govt,,2400,Large,lakshmibai.ac.in,Prof. Lata Sharma ,info@lb.du.ac.in,011-27308598,75,Tier1
+Delhi College Of Arts And Commerce,Delhi,Delhi,Govt,,3400,Large,dcac.du.ac.in,Rajiv Chopra,principaldcac@gmail.com,011-24109821,75,Tier1
+Jamia Millia Islamia,Delhi,Delhi,Govt,,8600,Large,jmi.ac.in,Dr. Mohd Arshad Khan,registrar@jmi.ac.in,011-26981717,75,Tier1
+Jawaharlal Nehru University,Delhi,Delhi,Govt,,6200,Large,jnu.ac.in,Prof. Santishree Dhulipudi Pandit,dr_admin@mail.jnu.ac.in,011-26742617,75,Tier1
+Delhi Technological University,Delhi,Delhi,Govt,,5800,Large,dtu.ac.in,Dr. Prateek Sharma,dtumitr@dtu.ac.in,011-27871018,75,Tier1
+Indraprastha Institute Of It,Delhi,Delhi,Govt,,3200,Large,iiitd.ac.in,Prof. Gajendra P.S. Raghava,info@iiitd.ac.in,011-26907400,75,Tier1
+Amity University Delhi,Delhi,Delhi,Private,,9400,Large,amity.edu, Prof. (Dr.) Balvinder Shukla,admissions@amity.edu,0120-2445252,100,Tier1
+Guru Gobind Singh Indraprastha Uni,Delhi,Delhi,Govt,,7200,Large,ipu.ac.in,Padma Shri Dr. Mahesh Verma,mail@ipu.ac.in,011-25302170,75,Tier1
+Lady Irwin College,Delhi,Delhi,Govt,,1800,Large,ladyirwin.edu.in,Prof. Neelima Asthana,director@lic.du.ac.in,011-23323257,75,Tier1
+College Of Vocational Studies,Delhi,Delhi,Govt,,2600,Large,cvs.du.ac.in,Professor Shiv Kumar Sahdev,cvs.edu@cvs.du.ac.in,011-29258544,75,Tier1
+Zakir Husain Delhi College,Delhi,Delhi,Govt,,3100,Large,zhdc.ac.in,Prof. Narendra Singh,zhdc@zh.du.ac.in,011-23232218,75,Tier1
+Satyawati College,Delhi,Delhi,Govt,,2800,Large,satyawati.du.ac.in,Prof. Subhash Kumar Singh,principal@satyawati.du.ac.in,011-27219570,75,Tier1
+Vivekananda College,Delhi,Delhi,Govt,,2600,Large,vivekananddcollege.ac.in,Prof. Pinki Maurya,vivac2008@vivekanand.du.ac.in,011-22150100,75,Tier1
+Shivaji College Delhi,Delhi,Delhi,Govt,,2900,Large,shivaji.du.ac.in,Prof. Virender Bhardwaj,shivajicollege.ac@gmail.com,011-25116644,75,Tier1
+Loyola College,Tamil Nadu,Chennai,Aided,,5200,Large,loyolacollege.edu,A. Louis Arockiaraj SJ,enquiry.adm@loyolacollege.edu,044-28178200,75,Tier1
+Presidency College,Tamil Nadu,Chennai,Govt,,3100,Large,presidencychennai.ac.in,Dr.R.Raman,contactus@pcc.ac.in,044-28544899,75,Tier1
+Stella Maris College,Tamil Nadu,Chennai,Aided,,3600,Large,stellamariscollege.edu.in,Dr. Sr. Stella Mary fmm,principal@stellamariscollege.edu.in,044-28111987,75,Tier1
+Psg College Of Arts And Science,Tamil Nadu,Coimbatore,Aided,,4800,Large,psgcas.ac.in,Dr. M. Jayanthi,principal@psgcas.ac.in,0422-4303300,75,Tier1
+Govt. Arts College,Tamil Nadu,Coimbatore,Govt,,2400,Large,,Dr. J. PREMALATHA,tngasa.support@gmail.com,0422-2221251,65,Tier2
+Madras Christian College,Tamil Nadu,Chennai,Aided,,5900,Large,mcc.edu.in,Dr. Paul Wilson,principal@mcc.edu.in,044-22390675,75,Tier1
+Vellore Institute Of Technology,Tamil Nadu,Vellore,Private,,20000,Large,vit.ac.in,Dr. G. Viswanathan,info@vit.ac.in,0416-2243091,100,Tier1
+Annamalai University Constituent Coll,Tamil Nadu,Cuddalore,Govt,,6200,Large,annamalaiuniversity.ac.in,Rajendra Vishwanath Arlekar,aucc@annamalaiuniversity.ac.in,04144-238282,75,Tier1
+Sri Ramakrishna College Of Arts,Tamil Nadu,Coimbatore,Private,,2900,Large,srcas.ac.in,Dr. B.L Shivakumar,office@srcas.ac.in,0422-2562788,100,Tier1
+Womens Christian College,Tamil Nadu,Chennai,Aided,,2700,Large,wcc.edu.in,Dr. Lilian I Jasper,info@wcc.edu.in,044-28275926,75,Tier1
+Iit Madras,Tamil Nadu,Chennai,Govt,,8200,Large,iitm.ac.in,Prof. V. Kamakoti,registrar@iitm.ac.in,044-22578000,75,Tier1
+Anna University,Tamil Nadu,Chennai,Govt,,6800,Large,annauniv.edu,Rajendra Vishwanath Arlekar,registrar@annauniv.edu,044-22357004,75,Tier1
+University Of Madras,Tamil Nadu,Chennai,Govt,,4200,Large,unom.ac.in,Prof. Dr. S. Gowri,registrar@unom.ac.in,044-25399422,75,Tier1
+Pachaiyappa'S College,Tamil Nadu,Chennai,Aided,,4600,Large,pachaiyappascollege.org,Dr. Baby Gulnaz,pachaiyappas@gmail.com,044-26412844,75,Tier1
+Government Arts College Chennai,Tamil Nadu,Chennai,Govt,,3200,Large,gac.ac.in,Dr. D. THANGARAJAN,gacmchennai35@gmail.com,044-24351048,75,Tier1
+Queen Mary'S College,Tamil Nadu,Chennai,Govt,,2800,Large,qmc.ac.in,Dr. B. Uma Maheswari,principal@queenmaryscollege.edu.in,044-28444995,75,Tier1
+Lady Doak College,Tamil Nadu,Madurai,Aided,,3100,Large,ladydoakcollege.edu.in,Dr. Beulah Jeyashree,principal@ldc.edu.in,0452-2530527,75,Tier1
+American College Madurai,Tamil Nadu,Madurai,Aided,,4200,Large,americancollege.edu.in,Dr. J. Paul Jayakar,office@americancollege.edu.in,0452-2530070,75,Tier1
+Madurai Kamaraj University College,Tamil Nadu,Madurai,Govt,,3600,Large,mkuniversity.ac.in,Dr.B GEORGE,mkucollege@gmail.com,0452-2544211,75,Tier1
+Thiagarajar College,Tamil Nadu,Madurai,Aided,,3400,Large,tcarts.ac.in,Dr. L. Ashok Kumar,ao@tcarts.in,0452-2442621,75,Tier1
+Sri Krishna College Of Engineering,Tamil Nadu,Coimbatore,Private,,3800,Large,skcet.ac.in,Dr. K. Porkumaran,principal@skcet.ac.in,0422-2678001,100,Tier1
+Kumaraguru College Of Technology,Tamil Nadu,Coimbatore,Private,,4100,Large,kct.ac.in,Dr. M. Ezhilarasi,info@kct.ac.in,0422-2661100,100,Tier1
+Kongu Engineering College,Tamil Nadu,Erode,Aided,,3600,Large,kongu.edu,Dr.V.Balusamy,principal@kongu.ac.in,04294-226555,75,Tier1
+Salem College,Tamil Nadu,Salem,Govt,,2400,Large,salemcollege.ac.in,Dr. V. Geetha,gacsalem7@gmail.com,0427-2413271,75,Tier1
+Periyar University College,Tamil Nadu,Salem,Govt,,2100,Large,periyaruniversity.ac.in,Dr.P.Karthikeyan,pucas@periyaruniversity.ac.in,0427-2345766,75,Tier1
+Bishop Heber College,Tamil Nadu,Tiruchirappalli,Aided,,3200,Large,bishophebercollegetry.ac.in,Dr.Princy Merlin J,principal@bhc.edu.in,0431-2770136,75,Tier1
+National College Tiruchirappalli,Tamil Nadu,Tiruchirappalli,Aided,,2800,Large,nationalcollegetrichy.ac.in,Dr. Kumar K,principal@nct.ac.in,0431-2482995,75,Tier1
+Bharathidasan University College,Tamil Nadu,Tiruchirappalli,Govt,,2600,Large,bdu.ac.in,Dr. K. Manoharan,pucas@bdu.ac.in,0431-2407072,75,Tier1
+Jamal Mohamed College,Tamil Nadu,Tiruchirappalli,Aided,,3100,Large,jmc.edu.in,Dr. D.I. George Amalarethinam,princi@jmc.edu,0431-2331135,75,Tier1
+Holy Cross College,Tamil Nadu,Tiruchirappalli,Aided,,2900,Large,holycrosstry.edu.in,Dr. Sr. Isabella Rajakumari,office@hcctrichy.ac.in,0431-2700637,75,Tier1
+Sathyabama Institute Of Science,Tamil Nadu,Chennai,Private,,6800,Large,sathyabama.ac.in,Dr. MARIAZEENA JOHNSON,registrar@sathyabama.ac.in,044-24503150,100,Tier1
+Saveetha Engineering College,Tamil Nadu,Chennai,Private,,4200,Large,saveetha.ac.in,Dr. V. Vijaya Chamundeeswari,admission@saveetha.ac.in,044-66726677,100,Tier1
+Sri Sairam Engineering College,Tamil Nadu,Chennai,Private,,3800,Large,sairam.edu.in,Dr. J. Raja,sairam@sairam.edu.in,044-22512222,100,Tier1
+Vel Tech University,Tamil Nadu,Chennai,Private,,3200,Large,veltech.edu.in,Prof. Dr. Rajat Gupta,registrar@veltech.edu.in,044-26841601,100,Tier1
+Ssn College Of Engineering,Tamil Nadu,Chennai,Private,,4400,Large,ssn.edu.in,Dr. S. Radha,info@ssn.edu.in,044-27469700,100,Tier1
+Ethiraj College For Women,Tamil Nadu,Chennai,Aided,,2800,Large,ethirajcollege.edu.in,S. Uma Gowrie,principal@ethirajcollege.edu.in,044-28279189,75,Tier1
+Dr. Ambedkar Govt. Arts College,Tamil Nadu,Chennai,Govt,,2400,Large,ambedkararts.ac.in,Dr. K. SIVAKUMARI,office@dagac.edu.in,044-25520151,75,Tier1
+Govt. Arts College Nandanam,Tamil Nadu,Chennai,Govt,,2200,Large,,Dr. D. Thangarajan,gacmchennai35@gmail.com,044-24351048,65,Tier2
+Rajalakshmi Engineering College,Tamil Nadu,Chennai,Private,,3600,Large,rajalakshmi.org,Dr. S.N. Murugesan,admin@rajalakshmi.edu.in,044-67181111,100,Tier1
+Govt. Arts College Coimbatore,Tamil Nadu,Coimbatore,Govt,,2600,Large,,Dr. M.R. Yezhili,govtartscoimbatore18@gmail.com,0422-2221251,65,Tier2
