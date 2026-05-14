@@ -6,12 +6,21 @@ import pandas as pd
 import re
 from tavily import TavilyClient
 from pathlib import Path
+from dotenv import load_dotenv
 
 # ============================================
 # TAVILY API SETUP
 # ============================================
 
-client = TavilyClient(api_key="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")  # ← change to your key
+# Load the variables from .env
+load_dotenv()
+
+# Get the key from the environment
+api_key = os.getenv("TAVILY_API_KEY")
+
+# Initialize the client using the variable
+client = TavilyClient(api_key=api_key)
+
 
 # ============================================
 # PATHS
