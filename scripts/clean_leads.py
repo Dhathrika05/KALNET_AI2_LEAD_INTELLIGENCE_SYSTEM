@@ -221,6 +221,37 @@ if "website_contact" in merged_df.columns:
     merged_df = merged_df.drop(columns=["website_contact"])
 
 # =========================
+# CREATE COMPANY SIZE CATEGORY
+# =========================
+
+def get_company_size(student_count):
+
+    if pd.isna(student_count):
+        return None
+
+    try:
+        student_count = int(student_count)
+
+        if student_count < 500:
+            return "Small"
+
+        elif student_count <= 1500:
+            return "Medium"
+
+        else:
+            return "Large"
+
+    except:
+        return None
+
+merged_df["company_size_category"] = merged_df["student_count"].apply(
+    get_company_size
+)
+
+# Add a column "board"
+merged_df["board"]=None
+
+# =========================
 # REMOVE FINAL DUPLICATES
 # =========================
 
@@ -235,7 +266,9 @@ final_columns = [
     "state",
     "district",
     "type",
+    "board",
     "student_count",
+    "company_size_category",
     "website",
     "principal_name",
     "email",
@@ -252,6 +285,7 @@ merged_df.to_csv(
     "data/interim/initial_clean.csv",
     index=False
 )
+
 
 # =========================
 # SUMMARY
