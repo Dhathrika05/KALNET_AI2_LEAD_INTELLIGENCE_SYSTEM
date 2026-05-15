@@ -26,7 +26,7 @@ with st.form(key="DataForm"):
 
     tier=st.selectbox(
         "Tier",
-        [None,"Tier 1","Tier 2","Tier 3"]
+        [None,"Tier1","Tier2","Tier3"]
     )
 
     has_email=st.checkbox("Has Email ?")
