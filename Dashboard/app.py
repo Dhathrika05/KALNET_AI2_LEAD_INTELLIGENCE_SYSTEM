@@ -6,7 +6,7 @@ st.title("DashBoard :")
 
 st.divider()
 
-apiurl='http://127.0.0.1:8000/leads?'
+apiurl='https://kalnet-dashboard-api-3.onrender.com/leads?'
 
 formdata={}
 
@@ -16,7 +16,7 @@ with st.form(key="DataForm"):
 
     state=st.selectbox(
         "State",
-        [None,'Telangana','Maharashtra','Andhra Pradesh','Tamil Nadu']
+        [None,'Telangana','Maharashtra','Delhi','Tamil Nadu','Karnataka']
     )
 
     school_type=st.selectbox(
