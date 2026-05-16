@@ -14,15 +14,11 @@ app = FastAPI()
 def get_engine():
 
     try:
-        host = os.getenv("DB_HOST", "127.0.0.1")
-        port = int(os.getenv("DB_PORT", 3306))
-        user = os.getenv("DB_USER", "root")
-        password = os.getenv("DB_PASSWORD")
-        db = os.getenv("DB_NAME", "kalnet_db")
-        
+
+        DATABASE_URL = os.getenv("DB_Connection")
 
         engine = create_engine(
-            f"mysql+pymysql://{user}:{password}@{host}:{port}/{db}"
+            DATABASE_URL
         )
 
         return engine
@@ -154,3 +150,13 @@ def get_lead(id: int):
         return {
             "error": str(e)
         }
+
+
+
+@app.get("/debug-env")
+def debug_env():
+    val = os.getenv("DB_Connection")
+    return {
+        "exists": val is not None,
+        "starts_with": val[:15] if val else "NOT FOUND"
+    }
