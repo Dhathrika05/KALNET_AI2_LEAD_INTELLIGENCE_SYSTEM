@@ -41,7 +41,7 @@ KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM/
 │── api/
 │   ├── main.py
 │
-│── clean_sscoring/
+│── clean_scoring/
 │   └── icp_scorer.py
 │
 │── Dashboard/
