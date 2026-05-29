@@ -82,9 +82,19 @@ KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM/
 
 **Table:** `institutions`
 
-Columns: - name - state - district - type - board - student_count -
-company_size_category - website - principal_name - email - phone -
-icp_score - icp_tier
+Columns: - name 
+         - state 
+         - district 
+         - type 
+         - board 
+         - student_count 
+         - company_size_category 
+         - website 
+         - principal_name 
+         - email 
+         - phone 
+         - icp_score 
+         - icp_tier
 
 ## ICP Scoring Logic
 
