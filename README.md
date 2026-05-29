@@ -77,6 +77,7 @@ KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM/
 ├── requirements.txt
 └── README.md
 ```
+## Scarper
 
 ## Database Schema
 
