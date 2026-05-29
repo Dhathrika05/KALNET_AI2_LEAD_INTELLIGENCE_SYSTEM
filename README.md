@@ -15,11 +15,11 @@ A searchable database of 500+ Indian schools and colleges with ICP (Ideal Custom
 
 | Name | Role | Files owned |
 |---|---|---|
-| Vangala Dhathrika | Pod Lead + DB Architect | `database/`, `load_data.py`, `Dashboard/app.py` |
+| Vangala Dhathrika | Pod Lead + DB Architect | `database/`, `load_data.py` |
 | Ushasree Nirumalla | Scraper Engineer 1 | `Scrapers/udise_scraper.py` |
 | **Bhavani Gujjari** | **Scraper Engineer 2** | **`Scrapers/aishe/`, `Scrapers/website_scraper.py`, `Scrapers/justdial_scraper.py`** |
 | Chintala Trisha | ICP Scorer | `Cleaning_Scoring/icp_scorer.py` |
-| M. Goutham Reddy | API + Dashboard | `main1.py`, `Dashboard/app.py` |
+| M. Goutham Reddy | API + Dashboard + Deployment| `main.py`, `Dashboard/app.py` |
 | Sangani Guna Sahithi | Data Cleaning + ML | `Cleaning_Scoring/clean_leads.py` |
 
 ---
@@ -62,10 +62,10 @@ KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM/
 │   └── db_manager.py                   ← Dhathrika: MySQL connection + load
 │
 ├── Dashboard/
-│   └── app.py                          ← Dhathrika + Goutham (Streamlit)
+│   └── app.py                          ← Goutham (Streamlit)
 │
 ├── logs/                               ← auto-generated: scraper logs
-├── main1.py                            ← Goutham: FastAPI entry point
+├── main.py                            ← Goutham: FastAPI entry point
 ├── requirements.txt
 ├── .gitignore
 └── README.md
@@ -276,15 +276,17 @@ Never commit `.env` to Git — it is already in `.gitignore`.
 requests==2.31.0
 beautifulsoup4==4.12.3
 lxml==5.1.0
-pandas==2.2.1
+pandas==2.2.2
 openpyxl==3.1.2
 sqlalchemy==2.0.28
 pymysql==1.1.0
 fastapi==0.110.0
 uvicorn==0.27.1
-streamlit==1.32.2
+streamlit==1.36.0
 scikit-learn==1.4.1
 python-dotenv==1.0.1
+psycopg2-binary==2.9.10
+python-dotenv==1.1.1
 ```
 
 ---
