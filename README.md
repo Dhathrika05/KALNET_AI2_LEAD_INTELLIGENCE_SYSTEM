@@ -2,9 +2,9 @@
 
 ## Overview
 
-KALNET AI-2 Lead Intelligence System is a college lead intelligence platform designed to collect, clean, score, and serve  institutional data for search and prioritization.
+KALNET AI-2 Lead Intelligence System is a college lead intelligence platform designed to collect, clean, score, and serve institutional data for search and prioritization.
 
-The system processes college data, stores it in PostgreSQL, exposes APIs using FastAPI, and provides a dashboard to search and explore college data from the database.
+The system processes college data, stores it in PostgreSQL, exposes APIs using FastAPI, and provides a React-based dashboard to search, filter, and explore college data from the database.
 
 ## Features
 
@@ -14,7 +14,7 @@ The system processes college data, stores it in PostgreSQL, exposes APIs using F
 -   PostgreSQL database integration
 -   FastAPI backend APIs
 -   Swagger UI API documentation
--   Streamlit dashboard for searching college data
+-   React dashboard for searching college data with CSV upload option
 -   Deployment support through Render
 
 ## Tech Stack
@@ -23,39 +23,38 @@ The system processes college data, stores it in PostgreSQL, exposes APIs using F
 -   PostgreSQL
 -   SQLAlchemy
 -   FastAPI
--   Streamlit
+-   React
 -   Pandas
 -   Swagger UI
 -   Render
 
 ## System Workflow
 
-``` text
 Scraping → Cleaning → ICP Scoring → Database → API → Dashboard
-```
 
 ## Project Structure
 
-``` text
 KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM/
 │── api/
-│   ├── main.py
+│   └── main.py
 │
 │── clean_scoring/
 │   └── icp_scorer.py
 │
-│── Dashboard/
-│   └── app.py
+│── dashboard/
+│   └── frontend/   # React app folder
+│       ├── src/
+│       └── public/
 │
 │── data/
 │   ├── raw/
 │   │   ├── colleges_aishe.csv
 │   │   ├── contacts_scraped.csv
 │   │   └── phones_scraped.csv
-│   │
+│
 │   ├── interim/
 │   │   └── initial_clean.csv
-│   │
+│
 │   └── processed/
 │       ├── cleaned_leads.csv
 │       └── leads_scored.csv
@@ -76,9 +75,25 @@ KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM/
 │
 ├── requirements.txt
 └── README.md
-```
 ## Scarper
 
+**Data Collection Pipeline :**
+
+College lead data is collected from multiple sources and processed through a structured pipeline.
+
+Data Sources
+         **AISHE Data** – Collects institution details such as name, state, district, type, student_count, and website.
+         **JustDial Scraper (scrapers/justdial_scraper.py)** – Extracts phone numbers of institutions.
+         **Website Scraper (scrapers/website_scraper.py)** – Extracts email addresses from institution websites.
+
+Raw scraped files are stored in:
+             data/raw
+**Data Processing**
+         - Raw datasets are merged and cleaned.
+         - Cleaned data is saved as:
+                          data/interim/initial_clean.csv
+After manual verification, the final dataset is saved as:
+                          data/processed/cleaned_leads.csv
 ## Database Schema
 
 **Table:** `institutions`
@@ -110,33 +125,37 @@ The project uses rule-based ICP scoring to prioritize institutions.
   Email available                  +15
   Principal name available         +10
 
+ICP Tier:
+
+         ≥70 → Tier 1
+         ≥40 → Tier 2
+         Else → Tier 3
+
 Based on the total score, institutions are categorized into ICP tiers.
 
 ## API
 
 ### Endpoint
 
-``` text
 /leads
-```
+
 
 ### Swagger Documentation
 
 After running FastAPI:
 
-``` text
 /docs
-```
+
 
 Swagger UI can be used to test APIs and view request/response formats.
 
 ## Dashboard
 
-The dashboard is used to search and explore college data stored in
-PostgreSQL.
+The React-based dashboard allows:
 
-It supports: - searching institutional records - filtering available
-lead data - viewing ICP scoring information
+         - Searching and filtering institutional records
+         - Viewing ICP scoring information
+         - Uploading CSVs for bulk lead import
 
 ## Setup Instructions
 
@@ -182,7 +201,9 @@ http://127.0.0.1:8000/docs
 ### 6. Run Dashboard
 
 ``` bash
-streamlit run Dashboard/app.py
+cd dashboard/frontend
+npm install
+npm run dev
 ```
 
 ## Deployment
@@ -198,6 +219,9 @@ The project is deployed using Render.
 
 ## Status
 
-Current system includes: - Data cleaning - ICP scoring - Database
-integration - API integration - Dashboard functionality - Deployment
-readiness
+Current system includes:   - Data cleaning 
+                           - ICP scoring 
+                           - Database integration 
+                           - API integration 
+                           - Dashboard functionality 
+                           - Deployment readiness
