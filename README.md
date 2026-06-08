@@ -77,12 +77,93 @@ KALNET_AI2_LEAD_INTELLIGENCE_SYSTEM/
 └── README.md
 ## Scarper
 
-**Data Collection Pipeline :**
+### Overview
 
-College lead data is collected from multiple sources and processed through a structured pipeline.
+The Scraper Module is responsible for collecting and enriching institutional lead data from multiple sources. It forms the first stage of the KALNET AI-2 Lead Intelligence pipeline.
 
-Data Sources
-         **AISHE Data** – Collects institution details such as name, state, district, type, student_count, and website.
+### AISHE Scraper
+
+The AISHE (All India Survey on Higher Education) scraper collects core institutional information.
+
+#### Extracted Fields
+
+* name
+* state
+* district
+* type
+* student_count
+* website
+
+#### Output
+
+`data/raw/colleges_aishe.csv`
+
+The AISHE scraper acts as the master dataset for all subsequent enrichment processes.
+
+---
+
+### Website Scraper
+
+The Website Scraper enriches institutional records by extracting contact information from official institution websites.
+
+#### Extracted Fields
+
+* principal_name
+* email
+* website
+
+#### Output
+
+`data/raw/contacts_scraped.csv`
+
+#### Features
+
+* Searches official institution websites
+* Extracts official email addresses
+* Attempts principal name identification
+* Filters invalid or non-official emails
+* Supports continuous CSV saving for fault tolerance
+
+---
+
+### JustDial Scraper
+
+The JustDial Scraper enriches institutional records with phone numbers.
+
+#### Extraction Strategy
+
+The scraper follows a multi-stage fallback approach:
+
+1. JustDial using Playwright (real browser rendering)
+2. Google Search snippets
+3. Institution website contact pages
+4. Curated verified fallback database
+
+#### Output
+
+`data/raw/phones_scraped.csv`
+
+#### Extracted Fields
+
+* name
+* phone
+* district
+* state
+
+#### Features
+
+* JavaScript-rendered page support using Playwright
+* Multiple fallback mechanisms
+* Phone number normalization and formatting
+* Error logging and retry handling
+* Duplicate prevention
+
+---
+
+### Design Principle
+
+Raw institutional data and enriched contact data are stored separately to maintain data quality and ensure easier validation, updating, and downstream processing.
+         
          **JustDial Scraper (scrapers/justdial_scraper.py)** – Extracts phone numbers of institutions.
          **Website Scraper (scrapers/website_scraper.py)** – Extracts email addresses from institution websites.
 
