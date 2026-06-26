@@ -26,7 +26,7 @@ The system processes college data, stores it in PostgreSQL, exposes APIs using F
 -   React
 -   Pandas
 -   Swagger UI
--   Render
+-   Vercel
 
 ## System Workflow
 
