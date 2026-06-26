@@ -15,7 +15,7 @@ The system processes college data, stores it in PostgreSQL, exposes APIs using F
 -   FastAPI backend APIs
 -   Swagger UI API documentation
 -   React dashboard for searching college data with CSV upload option
--   Deployment support through Render
+-   Deployment support through Vercel
 
 ## Tech Stack
 
@@ -289,7 +289,7 @@ npm run dev
 
 ## Deployment
 
-The project is deployed using Render.
+The project is deployed using vercel.
 
 ## Future Improvements
 
