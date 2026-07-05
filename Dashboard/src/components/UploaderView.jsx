@@ -7,6 +7,27 @@ import {
   CloseIcon
 } from './Icons';
 
+// Helper: Dynamically load SheetJS from CDN for Excel parsing (lazy load for performance)
+const loadSheetJS = () => {
+  return new Promise((resolve, reject) => {
+    if (window.XLSX) {
+      resolve(window.XLSX);
+      return;
+    }
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js';
+    script.onload = () => {
+      if (window.XLSX) {
+        resolve(window.XLSX);
+      } else {
+        reject(new Error("SheetJS failed to load"));
+      }
+    };
+    script.onerror = () => reject(new Error("Failed to load Excel parsing engine"));
+    document.body.appendChild(script);
+  });
+};
+
 export default function UploaderView({ onUploadSuccess }) {
   const [dragActive, setDragActive] = useState(false);
   const [file, setFile] = useState(null);
@@ -54,7 +75,7 @@ export default function UploaderView({ onUploadSuccess }) {
     for (let i = 1; i < lines.length; i++) {
       const line = lines[i].trim();
       if (!line) continue;
-      
+
       const values = parseCSVLine(line);
       const row = {};
       headers.forEach((header, index) => {
@@ -80,8 +101,14 @@ export default function UploaderView({ onUploadSuccess }) {
   const processFile = (selectedFile) => {
     if (!selectedFile) return;
 
-    if (selectedFile.type !== "text/csv" && !selectedFile.name.endsWith('.csv')) {
-      setError("Invalid file type. Please upload a CSV file (.csv).");
+    const isCSV = selectedFile.type === "text/csv" || selectedFile.name.endsWith('.csv');
+    const isExcel = selectedFile.type === "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" ||
+      selectedFile.type === "application/vnd.ms-excel" ||
+      selectedFile.name.endsWith('.xlsx') ||
+      selectedFile.name.endsWith('.xls');
+
+    if (!isCSV && !isExcel) {
+      setError("Invalid file type. Please upload a CSV (.csv) or Excel (.xlsx, .xls) file.");
       setFile(null);
       setParsedData(null);
       return;
@@ -92,22 +119,72 @@ export default function UploaderView({ onUploadSuccess }) {
     setFile(selectedFile);
 
     const reader = new FileReader();
-    reader.onload = (e) => {
-      const text = e.target.result;
-      const parsed = parseCSV(text);
-      setParsedData(parsed);
-    };
-    reader.onerror = () => {
-      setError("Failed to read the file. Please try again.");
-    };
-    reader.readAsText(selectedFile);
+
+    if (isCSV) {
+      reader.onload = (e) => {
+        const text = e.target.result;
+        const parsed = parseCSV(text);
+        setParsedData(parsed);
+      };
+      reader.onerror = () => {
+        setError("Failed to read the CSV file. Please try again.");
+      };
+      reader.readAsText(selectedFile);
+    } else if (isExcel) {
+      reader.onload = async (e) => {
+        try {
+          const data = new Uint8Array(e.target.result);
+          const XLSX = await loadSheetJS();
+          const workbook = XLSX.read(data, { type: 'array' });
+          const firstSheetName = workbook.SheetNames[0];
+          const worksheet = workbook.Sheets[firstSheetName];
+          const json = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+          if (json.length === 0) {
+            setError("The Excel file seems to be empty.");
+            return;
+          }
+
+          const rawHeaders = json[0] || [];
+          const headers = rawHeaders.map(h => String(h || '').trim());
+          const rows = [];
+
+          for (let i = 1; i < json.length; i++) {
+            const rowData = json[i];
+            if (!rowData || rowData.length === 0) continue;
+
+            // Skip completely empty rows
+            if (rowData.every(val => val === null || val === undefined || String(val).trim() === '')) {
+              continue;
+            }
+
+            const row = {};
+            headers.forEach((header, colIndex) => {
+              if (header) {
+                row[header] = rowData[colIndex] !== undefined ? rowData[colIndex] : '';
+              }
+            });
+            rows.push(row);
+          }
+
+          setParsedData({ headers, rows });
+        } catch (err) {
+          console.error(err);
+          setError("Failed to parse the Excel file. Make sure it is not corrupted.");
+        }
+      };
+      reader.onerror = () => {
+        setError("Failed to read the Excel file. Please try again.");
+      };
+      reader.readAsArrayBuffer(selectedFile);
+    }
   };
 
   const handleDrop = (e) => {
     e.preventDefault();
     e.stopPropagation();
     setDragActive(false);
-    
+
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
       processFile(e.dataTransfer.files[0]);
     }
@@ -152,7 +229,7 @@ export default function UploaderView({ onUploadSuccess }) {
       // we try sending the parsed records as JSON.
       if (!response.ok) {
         console.warn(`File upload returned status ${response.status}. Attempting JSON upload fallback...`);
-        
+
         // Map headers to DB compatible properties:
         // school_name/institution_name/search -> name
         // school_type -> type
@@ -196,7 +273,7 @@ export default function UploaderView({ onUploadSuccess }) {
       }
 
       const resData = await response.json();
-      
+
       if (resData.error) {
         throw new Error(resData.error);
       }
@@ -209,7 +286,7 @@ export default function UploaderView({ onUploadSuccess }) {
       if (onUploadSuccess) {
         onUploadSuccess();
       }
-      
+
       // Clear file after successful upload
       setFile(null);
       setParsedData(null);
@@ -223,11 +300,11 @@ export default function UploaderView({ onUploadSuccess }) {
 
   return (
     <div className="space-y-6">
-      {/* CSV Upload Form */}
+      {/* Data Upload Form */}
       <div className="bg-white rounded-xl border border-slate-200/80 shadow-sm p-6">
-        <h2 className="text-base font-bold text-slate-800 mb-1">CSV Data Importer</h2>
+        <h2 className="text-base font-bold text-slate-800 mb-1">Data Importer</h2>
         <p className="text-xs text-slate-500 mb-5">
-          Select or drag and drop a CSV file containing institution leads to insert them directly into the database.
+          Select or drag and drop a CSV or Excel file containing institution leads to insert them directly into the database.
         </p>
 
         {error && (
@@ -260,16 +337,15 @@ export default function UploaderView({ onUploadSuccess }) {
             onDragLeave={handleDrag}
             onDrop={handleDrop}
             onClick={() => fileInputRef.current.click()}
-            className={`border-2 border-dashed rounded-xl py-12 px-6 text-center cursor-pointer transition-all flex flex-col items-center justify-center ${
-              dragActive 
-                ? 'border-blue-500 bg-blue-50/40' 
-                : 'border-slate-300 hover:border-blue-400 bg-slate-50/50 hover:bg-slate-50'
-            }`}
+            className={`border-2 border-dashed rounded-xl py-12 px-6 text-center cursor-pointer transition-all flex flex-col items-center justify-center ${dragActive
+              ? 'border-blue-500 bg-blue-50/40'
+              : 'border-slate-300 hover:border-blue-400 bg-slate-50/50 hover:bg-slate-50'
+              }`}
           >
             <input
               ref={fileInputRef}
               type="file"
-              accept=".csv"
+              accept=".csv, .xlsx, .xls"
               onChange={handleFileChange}
               className="hidden"
             />
@@ -277,14 +353,14 @@ export default function UploaderView({ onUploadSuccess }) {
               <UploadIcon className="w-6 h-6" />
             </div>
             <p className="text-sm font-bold text-slate-700 m-0">Click to upload or drag and drop</p>
-            <p className="text-xs text-slate-500 mt-1 mb-0">CSV files only (.csv)</p>
+            <p className="text-xs text-slate-500 mt-1 mb-0">CSV or Excel files (.csv, .xlsx, .xls)</p>
           </div>
         ) : (
           /* File Selected State */
           <div className="border border-slate-200 rounded-xl p-4 bg-slate-50/50 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-xs">
-                CSV
+              <div className="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-[10px]">
+                {file.name.split('.').pop().toUpperCase()}
               </div>
               <div>
                 <p className="text-sm font-bold text-slate-800 m-0">{file.name}</p>
@@ -310,7 +386,7 @@ export default function UploaderView({ onUploadSuccess }) {
                   </>
                 )}
               </button>
-              
+
               <button
                 onClick={clearFile}
                 disabled={uploading}
@@ -330,7 +406,7 @@ export default function UploaderView({ onUploadSuccess }) {
             <h3 className="text-sm font-bold text-slate-800 m-0">CSV File Preview</h3>
             <p className="text-xs text-slate-500 m-0">Showing first 10 rows for structure verification</p>
           </div>
-          
+
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <thead>
